@@ -33,7 +33,7 @@ endclass : ei_tdp_ram_base_sequence_c
 //Description         : User-defined constructor to allocate memory
 ////////////////////////////////////////////////////////////////////////
  
-function ei_tdp_ram_base_sequence_c::new(string name = "sanity_sequence_h");
+function ei_tdp_ram_base_sequence_c::new(string name = "base_sequence_h");
      
     //calling parent class constructor 
     super.new(name); 

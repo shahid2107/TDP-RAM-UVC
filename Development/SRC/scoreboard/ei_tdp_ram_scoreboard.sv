@@ -139,7 +139,7 @@ task ei_tdp_ram_scoreboard_c::run_phase(uvm_phase phase);
         begin
             `uvm_info("Scoreboard", "(Port B)Reading from Scoreboard Memory", UVM_DEBUG)
             //comparing scoreboard memory and actual data received
-            if(scb_mem[addr_a] != tr_h.out_a)
+            if(scb_mem[tr_h.addr_a] != tr_h.out_a)
             begin
                 `uvm_error("Scoreboard Error", "Expected Read Data(Port A) is not matching with Actual Data(Port A)")
             end
@@ -162,7 +162,7 @@ task ei_tdp_ram_scoreboard_c::run_phase(uvm_phase phase);
         begin
             `uvm_info("Scoreboard", "(Port B)Reading from Scoreboard Memory", UVM_DEBUG)
             //comparing scoreboard memory and actual data received
-            if(scb_mem[addr_b] != tr_h.out_b)
+            if(scb_mem[tr_h.addr_b] != tr_h.out_b)
             begin
                 `uvm_error("Scoreboard Error", "Expected Read Data(Port B) is not matching with Actual Data(Port B)")
             end
@@ -197,7 +197,7 @@ endfunction : write
 //Description         : To print the report of testcase 
 ////////////////////////////////////////////////////////////////////////
  
-function void report_phase(uvm_phase phase);
+function void ei_tdp_ram_scoreboard_c::report_phase(uvm_phase phase);
      
     //creating a report server
     uvm_report_server ei_tdp_ram_server_h;
@@ -213,13 +213,13 @@ function void report_phase(uvm_phase phase);
     if(ei_tdp_ram_server_h.get_severity_count(UVM_ERROR) > 0)
     begin
         `uvm_info("Scoreboard Report", "--------------------------------", UVM_NONE)
-        `uvm_info("Scoreboard Report", "----     TESTCASE PASSED    ----", UVM_NONE)
+        `uvm_info("Scoreboard Report", "----     TESTCASE FAILED    ----", UVM_NONE)
         `uvm_info("Scoreboard Report", "--------------------------------", UVM_NONE)
     end
     else
     begin
         `uvm_info("Scoreboard Report", "--------------------------------", UVM_NONE)
-        `uvm_info("Scoreboard Report", "----     TESTCASE FAILED    ----", UVM_NONE)
+        `uvm_info("Scoreboard Report", "----     TESTCASE PASSED    ----", UVM_NONE)
         `uvm_info("Scoreboard Report", "--------------------------------", UVM_NONE)
     end
 

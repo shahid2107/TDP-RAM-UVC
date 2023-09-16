@@ -22,7 +22,7 @@ class ei_tdp_ram_p1_sanity_test_c extends ei_tdp_ram_base_test_c;
     extern function new(string name = "p1_sanity_test_h", uvm_component parent = null);
 
     //build-phase method declaration
-    extern function build_phase(uvm_phase phase);
+    extern function void build_phase(uvm_phase phase);
     
     //end of elaboration phase method declaration
     extern function void end_of_elaboration_phase(uvm_phase phase);
@@ -71,7 +71,7 @@ endfunction : build_phase
 //Description         : Print the hierarchy of the test 
 ////////////////////////////////////////////////////////////////////////
  
-function void end_of_elaboration_phase(uvm_phase phase);
+function void ei_tdp_ram_p1_sanity_test_c::end_of_elaboration_phase(uvm_phase phase);
      
     //calling parent class end_of_elaboration_phase 
     super.end_of_elaboration_phase(phase); 
@@ -87,7 +87,7 @@ endfunction : end_of_elaboration_phase
 //Description         : Start the sequence 
 ////////////////////////////////////////////////////////////////////////
  
-task ei_tdp_ram_p1_santiy_test_c::run_phase(uvm_phase phase);
+task ei_tdp_ram_p1_sanity_test_c::run_phase(uvm_phase phase);
      
     //calling parent class run_phase 
     super.run_phase(phase); 
@@ -98,7 +98,7 @@ task ei_tdp_ram_p1_santiy_test_c::run_phase(uvm_phase phase);
     //start the sequence
     seq_h.start(env_h.agent_h.seqr_h);
     //setting the drain time 
-    phase.phase_done.ser_drain_time(this, 21);
+    phase.phase_done.set_drain_time(this, 41);
     //drop the objection
     phase.drop_objection(this);
 

@@ -24,10 +24,10 @@ class ei_tdp_ram_agent_c extends uvm_agent;
     extern function new(string name = "agent_h", uvm_component parent = null);
 
     //build-phase method declaration
-    extern function build_phase(uvm_phase phase);
+    extern function void build_phase(uvm_phase phase);
 
     //connect phase method declaration
-    extern function connect_phase(uvm_phase phase);
+    extern function void connect_phase(uvm_phase phase);
 
 endclass : ei_tdp_ram_agent_c
 

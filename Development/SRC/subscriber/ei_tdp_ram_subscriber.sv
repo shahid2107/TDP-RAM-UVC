@@ -31,13 +31,13 @@ class ei_tdp_ram_subscriber_c extends uvm_subscriber #(ei_tdp_ram_seq_item_c);
     extern function new(string name = "sub_h", uvm_component parent = null);
 
     //build-phase method declaration
-    extern function void build_phase(uvm_phase);
+    extern function void build_phase(uvm_phase phase);
 
     //run-phase method declaration
     extern task run_phase(uvm_phase phase);
 
     //write method declaration
-    extern function write(ei_tdp_ram_seq_item_c tr_h);
+    extern function void write(ei_tdp_ram_seq_item_c tr_h);
 
 endclass : ei_tdp_ram_subscriber_c
 
@@ -48,7 +48,7 @@ endclass : ei_tdp_ram_subscriber_c
 //Description         : User-defined Constructor to allocate memory
 ////////////////////////////////////////////////////////////////////////
  
-function ei_tdp_ram_subscriber_c::new(string name = "scb_h", uvm_component parent = null);
+function ei_tdp_ram_subscriber_c::new(string name = "sub_h", uvm_component parent = null);
      
     //calling parent class constructor 
     super.new(name, parent); 
@@ -99,7 +99,7 @@ endtask : run_phase
 //Description         : Receiving the packet from Monitor
 ////////////////////////////////////////////////////////////////////////
 
-function ei_tdp_ram_subscriber_c::write(ei_tdp_ram_seq_item_c tr_h);
+function void ei_tdp_ram_subscriber_c::write(ei_tdp_ram_seq_item_c tr_h);
 
     `uvm_info("Subscriber", $sformatf("Received a packet from Monitor\n%s", tr_h.sprint()), UVM_FULL)
     //storing the packet in the queue

@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/home/jignesh.patoliya/VCS/work/vcs/S-2021.09-SP2-8/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/home/jignesh.patoliya/VCS/work/vcs/S-2021.09-SP2-8/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/home/jignesh.patoliya/VCS/work/vcs/S-2021.09-SP2-8/linux64/lib:/home/jignesh.patoliya/VCS/work/vcs/S-2021.09-SP2-8/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/home/jignesh.patoliya/VCS/work/vcs/S-2021.09-SP2-8/linux64/bin/vcsfind_create_index.exe  -z  "/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SIM/simv.daidir/debug_dump/fsearch/./idents_JcxNp8.xml.gz" "/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SIM/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SIM/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SIM/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SIM/simv.daidir/debug_dump/fsearch/fsearch.db"

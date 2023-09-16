@@ -72,7 +72,7 @@ endfunction : build_phase
 //Description         : Connect the monitor with scoreboard and subscriber 
 ////////////////////////////////////////////////////////////////////////
  
-function void connect_phase(uvm_phase phase);
+function void ei_tdp_ram_env_c::connect_phase(uvm_phase phase);
      
     //calling parent class connect_phase 
     super.connect_phase(phase); 

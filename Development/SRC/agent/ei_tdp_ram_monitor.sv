@@ -41,7 +41,7 @@ class ei_tdp_ram_monitor_c extends uvm_monitor;
     local int counter;
 
     //user-defined constructor declaration
-    extern function new(string new = "mon_h", uvm_component parent = null);
+    extern function new(string name = "mon_h", uvm_component parent = null);
 
     //build-phase method declaration
     extern function void build_phase(uvm_phase phase);
@@ -79,7 +79,7 @@ function void ei_tdp_ram_monitor_c::build_phase(uvm_phase phase);
     `uvm_info("Monitor", "Build Phase", UVM_FULL) 
 
     //extract vif from config db
-    uvm_config_db #(virtual ei_tdp_ram_seq_item_c #(.ADDR_WIDTH(`ADDR_WIDTH), .DATA_WIDTH(`DATA_WIDTH)))::
+    uvm_config_db #(virtual ei_tdp_ram_interface_i #(.ADDR_WIDTH(`ADDR_WIDTH), .DATA_WIDTH(`DATA_WIDTH)))::
         get(this, "", "vif", vif);
 
     //allocate memory to mon_port
@@ -154,6 +154,9 @@ task ei_tdp_ram_monitor_c::run_phase(uvm_phase phase);
 
         //sending the packet to scoreboard and subscriber
         mon_port.write(tr_h);
+    
+        //wait for one clock cycle
+        @(vif.monitor_cb);
 
     end
 

@@ -13,7 +13,11 @@
 `include "ei_tdp_ram_interface.sv"
 
 //package declaration
-package ei_tdp_ram_package();
+package ei_tdp_ram_package;
+
+    //import uvm package
+    import uvm_pkg::*;
+    `include "uvm_macros.svh"
 
     //sequence item class file
     `include "ei_tdp_ram_seq_item.sv"
@@ -33,7 +37,7 @@ package ei_tdp_ram_package();
     `include "ei_tdp_ram_subscriber.sv"
 
     //environment class file
-    `include "ei_tdp_ram_environment.sv"
+    `include "ei_tdp_ram_env.sv"
 
     //base sequence class file
     `include "ei_tdp_ram_base_sequence.sv"
@@ -43,6 +47,6 @@ package ei_tdp_ram_package();
     //base test class file
     `include "ei_tdp_ram_base_test.sv"
     //sanity test class file
-    `include "ei_tdp_ram_sanity_test.sv"
+    `include "ei_tdp_ram_p1_sanity_test.sv"
 
 endpackage : ei_tdp_ram_package

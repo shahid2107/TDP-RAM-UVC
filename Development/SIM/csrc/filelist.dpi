@@ -1,0 +1,6 @@
+DPI_STUB_OBJS_OBJ0=./../simv.daidir/vc_hdrs.o
+DPI_STUB_OBJS_SRC0=./../simv.daidir/vc_hdrs.c
+DPI_STUB_OBJS += $(DPI_STUB_OBJS_OBJ0)
+$(DPI_STUB_OBJS_OBJ0): $(DPI_STUB_OBJS_SRC0)
+	@$(CC) -I/home/jignesh.patoliya/VCS/work/vcs/S-2021.09-SP2-8/include  -pipe -fPIC -DVCS    -I/home/jignesh.patoliya/VCS/work/vcs/S-2021.09-SP2-8/include  -fPIC -c -o $(DPI_STUB_OBJS_OBJ0) $(DPI_STUB_OBJS_SRC0)
+	@strip -g $(DPI_STUB_OBJS_OBJ0)

@@ -68,7 +68,7 @@ interface ei_tdp_ram_interface_i #(parameter ADDR_WIDTH = 10, DATA_WIDTH = 8) (i
         input out_a;
         input out_b;
 
-    endclocking : driver_cb
+    endclocking : monitor_cb
 
     //modport declaration
     modport driver_mod  (clocking driver_cb);

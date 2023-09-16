@@ -15,6 +15,9 @@ class ei_tdp_ram_sanity_sequence_c extends ei_tdp_ram_base_sequence_c;
     //factory registration of the class
     `uvm_object_utils(ei_tdp_ram_sanity_sequence_c)
 
+    //object of transaction class 
+    ei_tdp_ram_seq_item_c tr_h;
+
     //variable to store local address
     local bit [`ADDR_WIDTH - 1 : 0] address;
 

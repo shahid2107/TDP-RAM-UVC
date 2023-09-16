@@ -11,15 +11,18 @@
 
 //import uvm package
 import uvm_pkg::*;
-`include "uvm_macros.sv"
+`include "uvm_macros.svh"
+
+//macros for address and data bus size
+`define ADDR_WIDTH 10
+`define DATA_WIDTH 8
 
 //import package for tdp ram
 `include "ei_tdp_ram_package.sv"
 import ei_tdp_ram_package::*;
 
-//macros for address and data bus size
-`define ADDR_WIDTH 10
-`define DATA_WIDTH 8
+//inclusion of DUT file
+`include "ei_tdp_ram_dut.sv"
 
 //module declaration
 module ei_tdp_ram_top();
@@ -60,7 +63,7 @@ module ei_tdp_ram_top();
     initial
     begin
         //store the pif in config db
-        uvm_config_db #(virtual ei_tdp_ram_interface_i(.ADDR_WIDTH(`ADDR_WIDTH), .DATA_WIDTH(`DATA_WIDTH)))::
+        uvm_config_db #(virtual ei_tdp_ram_interface_i #(.ADDR_WIDTH(`ADDR_WIDTH), .DATA_WIDTH(`DATA_WIDTH)))::
             set(null, "*", "vif", pif);
 
         //start the test

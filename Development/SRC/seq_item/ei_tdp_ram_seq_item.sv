@@ -69,10 +69,10 @@ endfunction : new
 function void ei_tdp_ram_seq_item_c::do_print(uvm_printer printer);
 
     //printing all fields using printer
-    printer.print_field_int("we_a", we_a, $bits(we_a), UVM_BIT);
-    printer.print_field_int("we_b", we_b, $bits(we_b), UVM_BIT);
-    printer.print_field_int("re_a", re_a, $bits(re_a), UVM_BIT);
-    printer.print_field_int("re_b", re_b, $bits(re_b), UVM_BIT);
+    printer.print_field_int("we_a", we_a, $bits(we_a), UVM_HEX);
+    printer.print_field_int("we_b", we_b, $bits(we_b), UVM_HEX);
+    printer.print_field_int("re_a", re_a, $bits(re_a), UVM_HEX);
+    printer.print_field_int("re_b", re_b, $bits(re_b), UVM_HEX);
     printer.print_field_int("addr_a", addr_a, $bits(addr_a), UVM_HEX);
     printer.print_field_int("addr_b", addr_b, $bits(addr_b), UVM_HEX);
     printer.print_field_int("data_a", data_a, $bits(data_a), UVM_HEX);

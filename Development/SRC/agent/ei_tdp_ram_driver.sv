@@ -13,7 +13,7 @@
 `define DRV_IF vif.driver_mod.driver_cb
 
 //class declaration
-class ei_tdp_ram_driver_c extends uvm_driver #(ei_tdp_ram_sqe_item_c);
+class ei_tdp_ram_driver_c extends uvm_driver #(ei_tdp_ram_seq_item_c);
 
     //factory registration of the class
     `uvm_component_utils(ei_tdp_ram_driver_c)
@@ -78,7 +78,7 @@ endfunction : build_phase
 //Description         : Drive the transaction on interface
 ////////////////////////////////////////////////////////////////////////
  
-task run_phase(uvm_phase phase);
+task ei_tdp_ram_driver_c::run_phase(uvm_phase phase);
      
     //calling parent class run_phase 
     super.run_phase(phase); 
@@ -129,7 +129,7 @@ task run_phase(uvm_phase phase);
             end
         join_any
         //disable both thread
-        disable drv
+        disable drv;
 
     end
      

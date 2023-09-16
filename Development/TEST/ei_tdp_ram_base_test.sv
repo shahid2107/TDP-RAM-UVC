@@ -25,7 +25,7 @@ class ei_tdp_ram_base_test_c extends uvm_test;
     extern function new(string name = "base_test_h", uvm_component parent = null);
 
     //build-phase method declaration
-    extern function build_phase(uvm_phase phase);
+    extern function void build_phase(uvm_phase phase);
 
     //run-phase method declaration
     extern task run_phase(uvm_phase phase);
@@ -71,7 +71,7 @@ endfunction : build_phase
 //Description         : Run-phase work
 ////////////////////////////////////////////////////////////////////////
  
-task run_phase(uvm_phase phase);
+task ei_tdp_ram_base_test_c::run_phase(uvm_phase phase);
      
     //calling parent class run_phase 
     super.run_phase(phase); 
