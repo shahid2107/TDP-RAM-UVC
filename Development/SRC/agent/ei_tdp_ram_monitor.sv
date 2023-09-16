@@ -9,6 +9,9 @@
 /******************************************************************/ 
 /*----------------------------------------------------------------*/ 
 
+//compiler directive for modport with clocking block
+`define MON_IF vif.monitor_mod.monitor_cb
+
 //class declaration
 class ei_tdp_ram_monitor_c extends uvm_monitor;
 

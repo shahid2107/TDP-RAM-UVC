@@ -9,6 +9,9 @@
 /******************************************************************/ 
 /*----------------------------------------------------------------*/ 
 
+//compiler directive for modport with clocking block
+`define DRV_IF vif.driver_mod.driver_cb
+
 //class declaration
 class ei_tdp_ram_driver_c extends uvm_driver #(ei_tdp_ram_sqe_item_c);
 
