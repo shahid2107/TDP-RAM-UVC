@@ -19,7 +19,7 @@ import ei_tdp_ram_package::*;
 
 //macros for address and data bus size
 `define ADDR_WIDTH 10
-`define DATA_WIDTH 32
+`define DATA_WIDTH 8
 
 //module declaration
 module ei_tdp_ram_top();
