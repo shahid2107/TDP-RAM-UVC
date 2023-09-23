@@ -126,6 +126,8 @@ task ei_tdp_ram_driver_c::run_phase(uvm_phase phase);
 
                 //sending completion signal to sequencer
                 seq_item_port.item_done();
+                //releasing the req
+                req = null;
             end
         join_any
         //disable both thread
@@ -166,13 +168,13 @@ endtask : ei_tdp_ram_drive_t
 task ei_tdp_ram_driver_c::ei_tdp_ram_reset_drive_t();
 
     //driving all signals low
-    `DRV_IF.we_a   <= 0;
-    `DRV_IF.we_b   <= 0;
-    `DRV_IF.re_a   <= 0;
-    `DRV_IF.re_b   <= 0;
-    `DRV_IF.addr_a <= 0;
-    `DRV_IF.addr_b <= 0;
-    `DRV_IF.data_a <= 0;
-    `DRV_IF.data_b <= 0;
+    vif.we_a   <= 0;
+    vif.we_b   <= 0;
+    vif.re_a   <= 0;
+    vif.re_b   <= 0;
+    vif.addr_a <= 0;
+    vif.addr_b <= 0;
+    vif.data_a <= 0;
+    vif.data_b <= 0;
 
 endtask : ei_tdp_ram_reset_drive_t

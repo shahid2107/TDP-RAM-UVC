@@ -52,5 +52,7 @@ package ei_tdp_ram_package;
     `include "ei_tdp_ram_p1_sanity_test.sv"
     //sanity test for port-2 class file
     `include "ei_tdp_ram_p2_sanity_test.sv"
+    //reset test class file
+    `include "ei_tdp_ram_reset_test.sv"
 
 endpackage : ei_tdp_ram_package

@@ -10,7 +10,7 @@
 /*----------------------------------------------------------------*/ 
 
 //interface declaration
-interface ei_tdp_ram_interface_i #(parameter ADDR_WIDTH = 10, DATA_WIDTH = 8) (input bit clk, resetn);
+interface ei_tdp_ram_interface_i #(parameter ADDR_WIDTH = 10, DATA_WIDTH = 8) (input bit clk, inout resetn);
 
     //properties declaration
 
@@ -29,6 +29,12 @@ interface ei_tdp_ram_interface_i #(parameter ADDR_WIDTH = 10, DATA_WIDTH = 8) (i
     logic [`DATA_WIDTH - 1 : 0] data_b;
     logic [`DATA_WIDTH - 1 : 0] out_a;
     logic [`DATA_WIDTH - 1 : 0] out_b;
+    
+    //variable for reset
+    bit reset = 1'b1;
+
+    //assigning resetn to reset
+    assign resetn = reset;
 
     //clocking block for driver
     clocking driver_cb @(posedge clk);

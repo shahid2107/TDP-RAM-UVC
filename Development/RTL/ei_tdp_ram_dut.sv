@@ -33,6 +33,8 @@ module ei_tdp_ram_dut
         //checking for resetn
         if(!resetn)
         begin
+            //drive output as low
+            q_a <= 0;
             //resetting the whole memory
             for(i=0; i<(2**ADDR_WIDTH)-1; i=i+1)
             begin
@@ -63,6 +65,8 @@ module ei_tdp_ram_dut
         //check for resetn
         if(!resetn)
         begin
+            //driveing q_b to low
+            q_b <= 0;
             //resetting the whole memory
             for(i=0; i<(2**ADDR_WIDTH)-1; i=i+1)
             begin

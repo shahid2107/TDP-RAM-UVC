@@ -29,7 +29,7 @@ module ei_tdp_ram_top();
 
     //global signal declaration
     bit clk;
-    bit resetn;
+    wire resetn;
 
     //parameters for clock generation
     real time_period;
@@ -74,7 +74,7 @@ module ei_tdp_ram_top();
     initial
     begin
         clk = 1'b0;
-        resetn = 1'b1;
+        //resetn = 1'b1;
         forever
         begin
             #10 clk = ~clk;
