@@ -37,6 +37,24 @@ class ei_tdp_ram_seq_item_c extends uvm_sequence_item;
     //counter variable for timing details
     int count;
 
+    //constraint to have write and read not at the same time
+    constraint c_wr_rd_pa { we_a == 1 -> re_a == 0; re_a == 1 -> we_a == 0; }
+    constraint c_wr_rd_pb { we_b == 1 -> re_b == 0; re_b == 1 -> we_b == 0; }
+
+    //don't randomize write data when read enable
+    constraint c_wdata_a {re_a -> data_a == 0;}
+    constraint c_wdata_b {re_b -> data_b == 0;}
+
+    //don't randomize address and data when both enable are off
+    constraint c_addr_data_a { 
+        (!we_a && !re_a) -> addr_a == 0;
+        (!we_a && !re_a) -> data_a == 0;
+    }
+    constraint c_addr_data_b { 
+        (!we_b && !re_b) -> addr_b == 0;
+        (!we_b && !re_b) -> data_b == 0;
+    }
+
     //user-defined constructor declaration
     extern function new(string name = "tr_h");
 
@@ -70,14 +88,14 @@ function void ei_tdp_ram_seq_item_c::do_print(uvm_printer printer);
 
     //printing all fields using printer
     printer.print_field_int("we_a", we_a, $bits(we_a), UVM_HEX);
-    printer.print_field_int("we_b", we_b, $bits(we_b), UVM_HEX);
     printer.print_field_int("re_a", re_a, $bits(re_a), UVM_HEX);
-    printer.print_field_int("re_b", re_b, $bits(re_b), UVM_HEX);
     printer.print_field_int("addr_a", addr_a, $bits(addr_a), UVM_HEX);
-    printer.print_field_int("addr_b", addr_b, $bits(addr_b), UVM_HEX);
     printer.print_field_int("data_a", data_a, $bits(data_a), UVM_HEX);
-    printer.print_field_int("data_b", data_b, $bits(data_b), UVM_HEX);
     printer.print_field_int("out_a", out_a, $bits(out_a), UVM_HEX);
+    printer.print_field_int("we_b", we_b, $bits(we_b), UVM_HEX);
+    printer.print_field_int("re_b", re_b, $bits(re_b), UVM_HEX);
+    printer.print_field_int("addr_b", addr_b, $bits(addr_b), UVM_HEX);
+    printer.print_field_int("data_b", data_b, $bits(data_b), UVM_HEX);
     printer.print_field_int("out_b", out_b, $bits(out_b), UVM_HEX);
     printer.print_field_int("count", count, $bits(count), UVM_DEC);
 

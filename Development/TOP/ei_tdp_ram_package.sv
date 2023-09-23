@@ -43,10 +43,14 @@ package ei_tdp_ram_package;
     `include "ei_tdp_ram_base_sequence.sv"
     //sanity sequence class file
     `include "ei_tdp_ram_sanity_sequence.sv"
+    //single port sanity sequence class file
+    `include "ei_tdp_ram_single_port_sanity_sequence.sv"
 
     //base test class file
     `include "ei_tdp_ram_base_test.sv"
-    //sanity test class file
+    //sanity test for port-1 class file
     `include "ei_tdp_ram_p1_sanity_test.sv"
+    //sanity test for port-2 class file
+    `include "ei_tdp_ram_p2_sanity_test.sv"
 
 endpackage : ei_tdp_ram_package

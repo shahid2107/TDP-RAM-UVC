@@ -3,3 +3,10 @@
   CREATE_STREAM @0 {NAME:seq_h T:Transactions SCOPE:uvm_test_top.env_h.agent_h.seqr_h STREAM:667}
   CREATE_STREAM @0 {NAME:seq_h T:Transactions SCOPE:uvm_test_top.env_h.agent_h.seqr_h STREAM:667}
   CREATE_STREAM @0 {NAME:seq_h T:Transactions SCOPE:uvm_test_top.env_h.agent_h.seqr_h STREAM:667}
+  CREATE_STREAM @0 {NAME:seq_h T:Transactions SCOPE:uvm_test_top.env_h.agent_h.seqr_h STREAM:667}
+  CREATE_STREAM @0 {NAME:seq_h T:Transactions SCOPE:uvm_test_top.env_h.agent_h.seqr_h STREAM:667}
+  CREATE_STREAM @0 {NAME:seq_h T:Transactions SCOPE:uvm_test_top.env_h.agent_h.seqr_h STREAM:667}
+  CREATE_STREAM @0 {NAME:seq_h T:Transactions SCOPE:uvm_test_top.env_h.agent_h.seqr_h STREAM:667}
+  CREATE_STREAM @0 {NAME:seq_h T:Transactions SCOPE:uvm_test_top.env_h.agent_h.seqr_h STREAM:667}
+  CREATE_STREAM @0 {NAME:seq_h T:Transactions SCOPE:uvm_test_top.env_h.agent_h.seqr_h STREAM:667}
+  CREATE_STREAM @0 {NAME:seq_h T:Transactions SCOPE:uvm_test_top.env_h.agent_h.seqr_h STREAM:667}
