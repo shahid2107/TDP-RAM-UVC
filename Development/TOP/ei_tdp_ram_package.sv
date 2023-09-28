@@ -45,6 +45,8 @@ package ei_tdp_ram_package;
     `include "ei_tdp_ram_sanity_sequence.sv"
     //single port sanity sequence class file
     `include "ei_tdp_ram_single_port_sanity_sequence.sv"
+    //dual port sanity sequence class file
+    `include "ei_tdp_ram_dual_port_sanity_sequence.sv"
 
     //base test class file
     `include "ei_tdp_ram_base_test.sv"
@@ -54,5 +56,11 @@ package ei_tdp_ram_package;
     `include "ei_tdp_ram_p2_sanity_test.sv"
     //reset test class file
     `include "ei_tdp_ram_reset_test.sv"
+    //inclusion of port-1 port-2 together sanity test
+    `include "ei_tdp_ram_p1_p2_sanity_test.sv"
+    //inclusion of port-1 write both port read test
+    `include "ei_tdp_ram_p1_wr_p1_p2_rd_test.sv"
+    //inclusion of port-2 write both port read test
+    `include "ei_tdp_ram_p2_wr_p1_p2_rd_test.sv"
 
 endpackage : ei_tdp_ram_package

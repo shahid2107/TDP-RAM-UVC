@@ -9,17 +9,17 @@
 /******************************************************************/ 
 /*----------------------------------------------------------------*/ 
 
-//enum for port to use
-typedef enum bit {PORT_A, PORT_B} ei_tdp_ram_port_e;
-
-//enum for operation
-typedef enum bit [1 : 0] {WR, RD, WR_RD, RD_WR} ei_tdp_ram_operation_e;
-
 //class declaration
 class ei_tdp_ram_single_port_sanity_sequence_c extends ei_tdp_ram_base_sequence_c;
 
     //factory registration of the class
     `uvm_object_utils(ei_tdp_ram_single_port_sanity_sequence_c)
+
+    //enum for port to use
+    typedef enum bit {PORT_A, PORT_B} ei_tdp_ram_port_e;
+
+    //enum for operation
+    typedef enum bit [1 : 0] {WR, RD, WR_RD, RD_WR} ei_tdp_ram_operation_e;
 
     //object of transaction class
     ei_tdp_ram_seq_item_c tr_h;

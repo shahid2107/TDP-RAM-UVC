@@ -15,8 +15,8 @@ class ei_tdp_ram_p2_sanity_test_c extends ei_tdp_ram_base_test_c;
     //factory registration of the class
     `uvm_component_utils(ei_tdp_ram_p2_sanity_test_c)
 
-    //single port sanity sequence declaration
-    ei_tdp_ram_single_port_sanity_sequence_c seq_h;
+    //dual port sanity sequence declaration
+    ei_tdp_ram_dual_port_sanity_sequence_c seq_h;
 
     //user-defined constructor declaration
     extern function new(string name = "p2_sanity_test_h", uvm_component parent = null);
@@ -60,7 +60,7 @@ function void ei_tdp_ram_p2_sanity_test_c::build_phase(uvm_phase phase);
     `uvm_info("P2 Sanity Test", "Build Phase", UVM_FULL) 
 
     //create sanity sequence
-    seq_h = ei_tdp_ram_single_port_sanity_sequence_c::type_id::create("seq_h");
+    seq_h = ei_tdp_ram_dual_port_sanity_sequence_c::type_id::create("seq_h");
      
 endfunction : build_phase 
 
@@ -93,18 +93,30 @@ task ei_tdp_ram_p2_sanity_test_c::run_phase(uvm_phase phase);
     super.run_phase(phase); 
     `uvm_info("P2 Sanity Test", "Run Phase", UVM_FULL)  
 
-    //configuring the sequence
-    //port-a to use
-    seq_h.port = PORT_B;
-    //operation write followed by read
-    seq_h.operation = WR_RD;
-    //total number of transactions
-    seq_h.no_of_transactions = 1;
-    
     //raise the objection
     phase.raise_objection(this);
+
+    //configuring the sequence for port-b write operation
+    //total number of transactions
+    seq_h.no_of_transactions = 1;
+    //port operations
+    seq_h.port_a_op = NO_OP;
+    seq_h.port_b_op = WR;
+    seq_h.addr_random_b = 0;
     //start the sequence
     seq_h.start(env_h.agent_h.seqr_h);
+
+    //configuring the sequence for port-b read operation
+    //total number of transactions
+    seq_h.no_of_transactions = 1;
+    //port operations
+    seq_h.port_a_op = NO_OP;
+    seq_h.port_b_op = RD;
+    seq_h.addr_random_b = 1;
+    seq_h.address_b = seq_h.tr_h.addr_b;
+    //start the sequence
+    seq_h.start(env_h.agent_h.seqr_h);
+
     //setting the drain time 
     phase.phase_done.set_drain_time(this, 41);
     //drop the objection

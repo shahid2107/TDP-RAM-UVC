@@ -151,12 +151,16 @@
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/scoreboard/ei_tdp_ram_scoreboard.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/seq_item/ei_tdp_ram_seq_item.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/sequences/ei_tdp_ram_base_sequence.sv
+/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/sequences/ei_tdp_ram_dual_port_sanity_sequence.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/sequences/ei_tdp_ram_sanity_sequence.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/sequences/ei_tdp_ram_single_port_sanity_sequence.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/subscriber/ei_tdp_ram_subscriber.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/TEST/ei_tdp_ram_base_test.sv
+/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/TEST/ei_tdp_ram_p1_p2_sanity_test.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/TEST/ei_tdp_ram_p1_sanity_test.sv
+/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/TEST/ei_tdp_ram_p1_wr_p1_p2_rd_test.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/TEST/ei_tdp_ram_p2_sanity_test.sv
+/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/TEST/ei_tdp_ram_p2_wr_p1_p2_rd_test.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/TEST/ei_tdp_ram_reset_test.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/TOP/ei_tdp_ram_package.sv
 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/TOP/ei_tdp_ram_top.sv
