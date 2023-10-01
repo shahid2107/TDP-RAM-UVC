@@ -1,0 +1,204 @@
+global coverage_group 0 ei_tdp_ram_package::ei_tdp_ram_subscriber_c::ei_tdp_ram_coverage __coverage_ei_tdp_ram_subscriber_c.ei_tdp_ram_coverage unused_ei_tdp_ram_subscriber_c_ei_tdp_ram_coverage_loop_label ei_tdp_ram_package 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 107 /home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/subscriber/ei_tdp_ram_subscriber.sv
+ 28 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+9
+0
+0
+0
+ 9 cp_resetn 32 0 0 0 0 0 167 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn 167 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 6 resetn 33 0 0 1 0 0 0 0 0 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_0 0 -1 0 0 -1 0 0 2 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_1 0 0 0 0 0 0 0
+ 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_2 0 0 0 0 0 0 0
+ 0
+
+ 7 cp_we_a 38 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_3 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_3 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 4 we_a 39 0 0 1 0 0 0 0 0 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_0 0 -1 0 0 -1 0 0 2 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_1 0 0 0 0 0 0 0
+ 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_2 0 0 0 0 0 0 0
+ 0
+
+ 7 cp_we_b 44 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_4 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_4 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 4 we_b 45 0 0 1 0 0 0 0 0 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_0 0 -1 0 0 -1 0 0 2 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_1 0 0 0 0 0 0 0
+ 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_2 0 0 0 0 0 0 0
+ 0
+
+ 9 cp_addr_a 50 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_5 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_5 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 10 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 6 addr_a 51 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_6 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_7 0 0 0 0 0
+ 0
+
+ 9 cp_addr_b 56 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_8 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_8 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 10 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 6 addr_b 57 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_6 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_7 0 0 0 0 0
+ 0
+
+ 9 cp_data_a 62 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_9 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_9 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 8 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 6 data_a 63 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_6 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_a 0 0 0 0 0
+ 0
+
+ 9 cp_data_b 68 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_b 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_b 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 8 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 6 data_b 69 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_6 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_a 0 0 0 0 0
+ 0
+
+ 8 cp_out_a 74 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_c 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_c 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 8 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 5 out_a 75 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_6 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_a 0 0 0 0 0
+ 0
+
+ 8 cp_out_b 80 0 0 0 0 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_d 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_d 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 8 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 5 out_b 81 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_6 0 169 ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0::ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_package_ei_tdp_ram_subscriber_c_11_0_ei_tdp_ram_coverage_fn_a 0 0 0 0 0
+ 0
+
+end_coverage_group

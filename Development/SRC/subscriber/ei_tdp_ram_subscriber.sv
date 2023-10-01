@@ -24,6 +24,66 @@ class ei_tdp_ram_subscriber_c extends uvm_subscriber #(ei_tdp_ram_seq_item_c);
     //analysis imp to receive packet from monitor
     uvm_analysis_imp #(ei_tdp_ram_seq_item_c, ei_tdp_ram_subscriber_c) sub_imp;
 
+    //covergroup for coverage
+    covergroup ei_tdp_ram_coverage;
+
+        //coverpoint for resetn
+        cp_resetn : coverpoint vif.resetn
+        {
+            bins resetn[2] = {0,1};
+        }
+
+        //coverpoint for we_a
+        cp_we_a : coverpoint tr_h.we_a
+        {
+            bins we_a[2] = {0,1};
+        }
+
+        //coverpoint for we_b
+        cp_we_b : coverpoint tr_h.we_b
+        {
+            bins we_b[2] = {0,1};
+        }
+
+        //coverpoint for addr_a
+        cp_addr_a : coverpoint tr_h.addr_a
+        {
+            bins addr_a[] = {[0:$]};
+        }
+
+        //coverpoint for addr_b
+        cp_addr_b : coverpoint tr_h.addr_b
+        {
+            bins addr_b[] = {[0:$]};
+        }
+
+        //coverpoint for data_a
+        cp_data_a : coverpoint tr_h.data_a
+        {
+            bins data_a[] = {[0:$]};
+        }
+
+        //coverpoint for data_b
+        cp_data_b : coverpoint tr_h.data_b
+        {
+            bins data_b[] = {[0:$]};
+        }
+
+        //coverpoint for out_a
+        cp_out_a : coverpoint tr_h.out_a
+        {
+            bins out_a[] = {[0:$]};
+        }
+
+        //coverpoint for out_b
+        cp_out_b : coverpoint tr_h.out_b
+        {
+            bins out_b[] = {[0:$]};
+        }
+
+    //end of cover group
+    endgroup : ei_tdp_ram_coverage
+
     //virtual interface instance
     virtual ei_tdp_ram_interface_i #(.ADDR_WIDTH(`ADDR_WIDTH), .DATA_WIDTH(`DATA_WIDTH)) vif;
 
@@ -52,6 +112,9 @@ function ei_tdp_ram_subscriber_c::new(string name = "sub_h", uvm_component paren
      
     //calling parent class constructor 
     super.new(name, parent); 
+    
+    //allocating the memory to the coverage group
+    ei_tdp_ram_coverage = new(); 
      
 endfunction : new 
 
@@ -74,7 +137,7 @@ function void ei_tdp_ram_subscriber_c::build_phase(uvm_phase phase);
 
     //allocate memory to sub_imp
     sub_imp = new("sub_imp", this);
-     
+
 endfunction : build_phase 
 
 ////////////////////////////////////////////////////////////////////////
@@ -104,6 +167,8 @@ function void ei_tdp_ram_subscriber_c::write(ei_tdp_ram_seq_item_c tr_h);
     `uvm_info("Subscriber", $sformatf("Received a packet from Monitor\n%s", tr_h.sprint()), UVM_FULL)
     //storing the packet in the queue
     queue.push_back(tr_h);
+    this.tr_h = tr_h;
+    ei_tdp_ram_coverage.sample();
 
 endfunction : write
 

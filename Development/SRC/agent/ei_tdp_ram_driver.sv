@@ -18,6 +18,9 @@ class ei_tdp_ram_driver_c extends uvm_driver #(ei_tdp_ram_seq_item_c);
     //factory registration of the class
     `uvm_component_utils(ei_tdp_ram_driver_c)
 
+    //callback registration
+    `uvm_register_cb(ei_tdp_ram_driver_c, ei_tdp_ram_driver_cb_c)
+
     //instance of virtual interface
     virtual ei_tdp_ram_interface_i #(.ADDR_WIDTH(`ADDR_WIDTH), .DATA_WIDTH(`DATA_WIDTH)) vif;
 
@@ -118,6 +121,8 @@ task ei_tdp_ram_driver_c::run_phase(uvm_phase phase);
                 //requesting new packet from sequencer
                 seq_item_port.get_next_item(req);
                 `uvm_info("Driver", $sformatf("Received a packet from\n%s", req.sprint()), UVM_FULL)
+                //callback hook
+                `uvm_do_callbacks(ei_tdp_ram_driver_c, ei_tdp_ram_driver_cb_c, ei_tdp_ram_modify_packet_t(req))
 
                 //thread to drive the received packet
                 begin : drv

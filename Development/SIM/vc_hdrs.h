@@ -72,6 +72,12 @@ typedef struct VeriC_Descriptor *vc_handle;
  extern SV_STRING uvm_glob_to_re(/* INPUT */const char* glob);
 
  extern void m__uvm_report_dpi(/* INPUT */int severity, /* INPUT */const char* id, /* INPUT */const char* message, /* INPUT */int verbosity, /* INPUT */const char* filename, /* INPUT */int line);
+
+ extern void* svapfGetAttempt(/* INPUT */unsigned int assertHandle);
+
+ extern void svapfReportResult(/* INPUT */unsigned int assertHandle, /* INPUT */void* ptrAttempt, /* INPUT */int result);
+
+ extern int svapfGetAssertEnabled(/* INPUT */unsigned int assertHandle);
 void SdisableFork();
 
 #ifdef __cplusplus

@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1696174133.312758718, "rt":20.57, "ut":17.62, "st":0.76}}
+{"vcselab":{"timestamp_begin":1696174153.982048063, "rt":2.48, "ut":0.42, "st":0.17}}
+{"link":{"timestamp_begin":1696174156.536790853, "rt":0.66, "ut":0.46, "st":0.22}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1696174132.519571521}
+{"VCS_COMP_START_TIME": 1696174132.519571521}
+{"VCS_COMP_END_TIME": 1696174157.372937945}
+{"VCS_USER_OPTIONS": "-full64 -debug_access+r -sverilog +acc +vpi +incdir+/home/hitesh.patel/UVM/UVM_1.2/src /home/hitesh.patel/UVM/UVM_1.2/src/uvm.sv /home/hitesh.patel/UVM/UVM_1.2/src/dpi/uvm_dpi.cc -CFLAGS -DVCS -assert svaext +vcs+lic+wait -f compile.f ../TOP/ei_tdp_ram_top.sv +define+UVM_REPORT_DISABLE_FILE_LINE"}
+{"vcs1": {"peak_mem": 388488}}
+{"stitch_vcselab": {"peak_mem": 227836}}

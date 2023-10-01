@@ -368,6 +368,71 @@ __attribute__((weak)) SV_STRING uvm_glob_to_re(/* INPUT */const char* A_1)
 }
 #endif /* __VCS_IMPORT_DPI_STUB_uvm_glob_to_re */
 
+#ifndef __VCS_IMPORT_DPI_STUB_svapfGetAttempt
+#define __VCS_IMPORT_DPI_STUB_svapfGetAttempt
+__attribute__((weak)) void* svapfGetAttempt(/* INPUT */unsigned int A_1)
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static void* (*_vcs_dpi_fp_)(/* INPUT */unsigned int A_1) = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (void* (*)(unsigned int A_1)) dlsym(RTLD_NEXT, "svapfGetAttempt");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        return _vcs_dpi_fp_(A_1);
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "svapfGetAttempt");
+        return 0;
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_svapfGetAttempt */
+
+#ifndef __VCS_IMPORT_DPI_STUB_svapfReportResult
+#define __VCS_IMPORT_DPI_STUB_svapfReportResult
+__attribute__((weak)) void svapfReportResult(/* INPUT */unsigned int A_1, /* INPUT */void* A_2, /* INPUT */int A_3)
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static void (*_vcs_dpi_fp_)(/* INPUT */unsigned int A_1, /* INPUT */void* A_2, /* INPUT */int A_3) = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (void (*)(unsigned int A_1, void* A_2, int A_3)) dlsym(RTLD_NEXT, "svapfReportResult");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        _vcs_dpi_fp_(A_1, A_2, A_3);
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "svapfReportResult");
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_svapfReportResult */
+
+#ifndef __VCS_IMPORT_DPI_STUB_svapfGetAssertEnabled
+#define __VCS_IMPORT_DPI_STUB_svapfGetAssertEnabled
+__attribute__((weak)) int svapfGetAssertEnabled(/* INPUT */unsigned int A_1)
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static int (*_vcs_dpi_fp_)(/* INPUT */unsigned int A_1) = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (int (*)(unsigned int A_1)) dlsym(RTLD_NEXT, "svapfGetAssertEnabled");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        return _vcs_dpi_fp_(A_1);
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "svapfGetAssertEnabled");
+        return 0;
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_svapfGetAssertEnabled */
+
 #ifndef __VCS_EXPORT_DPI_DUMMY_REFERENCES__
 #define __VCS_EXPORT_DPI_DUMMY_REFERENCES__
 /* Dummy references to those export DPI routines.
