@@ -1,6 +1,6 @@
 Chronologic VCS simulator copyright 1991-2021
 Contains Synopsys proprietary information.
-Compiler version S-2021.09-SP2-8_Full64; Runtime version S-2021.09-SP2-8_Full64;  Oct  1 09:19 2023
+Compiler version S-2021.09-SP2-8_Full64; Runtime version S-2021.09-SP2-8_Full64;  Oct  2 02:21 2023
 UVM_INFO @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2
@@ -27,26 +27,26 @@ UVM_INFO @ 0: reporter [TIMOUTSET] '+UVM_TIMEOUT=25000' provided on the command 
 ------------------------------------------------------------------------
 Name                       Type                              Size  Value
 ------------------------------------------------------------------------
-uvm_test_top               ei_tdp_ram_p1_wr_p1_p2_rd_test_c  -     @340 
-  env_h                    ei_tdp_ram_env_c                  -     @353 
-    agent_h                ei_tdp_ram_agent_c                -     @368 
-      drv_h                ei_tdp_ram_driver_c               -     @543 
-        rsp_port           uvm_analysis_port                 -     @562 
-        seq_item_port      uvm_seq_item_pull_port            -     @552 
-      mon_h                ei_tdp_ram_monitor_c              -     @572 
-        mon_port           uvm_analysis_port                 -     @583 
-      seqr_h               ei_tdp_ram_sequencer_c            -     @406 
-        rsp_export         uvm_analysis_export               -     @415 
-        seq_item_export    uvm_seq_item_pull_imp             -     @533 
+uvm_test_top               ei_tdp_ram_p1_wr_p1_p2_rd_test_c  -     @356 
+  env_h                    ei_tdp_ram_env_c                  -     @369 
+    agent_h                ei_tdp_ram_agent_c                -     @384 
+      drv_h                ei_tdp_ram_driver_c               -     @559 
+        rsp_port           uvm_analysis_port                 -     @578 
+        seq_item_port      uvm_seq_item_pull_port            -     @568 
+      mon_h                ei_tdp_ram_monitor_c              -     @588 
+        mon_port           uvm_analysis_port                 -     @599 
+      seqr_h               ei_tdp_ram_sequencer_c            -     @422 
+        rsp_export         uvm_analysis_export               -     @431 
+        seq_item_export    uvm_seq_item_pull_imp             -     @549 
         arbitration_queue  array                             0     -    
         lock_queue         array                             0     -    
         num_last_reqs      integral                          32    'd1  
         num_last_rsps      integral                          32    'd1  
-    scb_h                  ei_tdp_ram_scoreboard_c           -     @377 
-      scb_imp              uvm_analysis_imp                  -     @599 
-    sub_h                  ei_tdp_ram_subscriber_c           -     @386 
-      analysis_imp         uvm_analysis_imp                  -     @395 
-      sub_imp              uvm_analysis_imp                  -     @610 
+    scb_h                  ei_tdp_ram_scoreboard_c           -     @393 
+      scb_imp              uvm_analysis_imp                  -     @615 
+    sub_h                  ei_tdp_ram_subscriber_c           -     @402 
+      analysis_imp         uvm_analysis_imp                  -     @411 
+      sub_imp              uvm_analysis_imp                  -     @626 
 ------------------------------------------------------------------------
 UVM_INFO @ 71: uvm_test_top.env_h.scb_h [Scoreboard Report] --------------------------------
 UVM_INFO @ 71: uvm_test_top.env_h.scb_h [Scoreboard Report] ----     TESTCASE PASSED    ----
@@ -55,5 +55,5 @@ $finish called from file "/home/hitesh.patel/UVM/UVM_1.2/src/base/uvm_root.svh",
 $finish at simulation time                   71
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 71
-CPU Time:      0.870 seconds;       Data structure size:   0.4Mb
-Sun Oct  1 09:19:45 2023
+CPU Time:      0.810 seconds;       Data structure size:   0.4Mb
+Mon Oct  2 02:21:48 2023

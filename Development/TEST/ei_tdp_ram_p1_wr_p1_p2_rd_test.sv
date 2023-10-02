@@ -121,7 +121,7 @@ task ei_tdp_ram_p1_wr_p1_p2_rd_test_c::run_phase(uvm_phase phase);
     seq_h.start(env_h.agent_h.seqr_h);
 
     //setting the drain time 
-    phase.phase_done.set_drain_time(this, 41);
+    phase.phase_done.set_drain_time(this, 210);
     //drop the objection
     phase.drop_objection(this);
 

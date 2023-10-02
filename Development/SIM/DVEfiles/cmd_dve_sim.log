@@ -14,9 +14,9 @@ synopsys::dump -autoflush on -fid VPD0
 set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnplTJF6w
-synUtils::sendTool -active {_icl_start_rpc -version "S-2021.09-SP2-8_Full64" -sync_file /tmp/vcs_dve_rpc.mahammadshahid.shaikh.16114}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.mahammadshahid.shaikh.16114}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpUuBDTx
+synUtils::sendTool -active {_icl_start_rpc -version "S-2021.09-SP2-8_Full64" -sync_file /tmp/vcs_dve_rpc.mahammadshahid.shaikh.31394}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.mahammadshahid.shaikh.31394}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
@@ -24,6 +24,7 @@ config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
 synopsys::dump -add {ei_tdp_ram_top.pif} -aggregates  -fid VPD0
+synopsys::dump -add {ei_tdp_ram_top.binding_file} -scope "." -depth 1 -fid VPD0
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state

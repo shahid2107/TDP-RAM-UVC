@@ -12,6 +12,9 @@
 //include interface file
 `include "ei_tdp_ram_interface.sv"
 
+//include assertion module
+`include "ei_tdp_ram_assertion.sv"
+
 //package declaration
 package ei_tdp_ram_package;
 
@@ -77,5 +80,27 @@ package ei_tdp_ram_package;
     `include "ei_tdp_ram_p1_rd_with_rd_en_low_test.sv"
     //inclusion of port-2 read with rd en low test
     `include "ei_tdp_ram_p2_rd_with_rd_en_low_test.sv"
+    //inclusion of port-1 5 write 5 read test
+    `include "ei_tdp_ram_p1_5_wr_p1_5_rd_test.sv"
+    //inclusion of port-2 5 write 5 read test
+    `include "ei_tdp_ram_p2_5_wr_p2_5_rd_test.sv"
+    //inclusion of random test 
+    `include "ei_tdp_ram_random_test.sv"
+    //inclusion of p1 b2b wr p1 rd test
+    `include "ei_tdp_ram_p1_b2b_wr_p1_rd_test.sv"
+    //inclusion of p2 b2b wr p2 rd test
+    `include "ei_tdp_ram_p2_b2b_wr_p2_rd_test.sv"
+    //inclusion of reset inbetween p1 5 wr test
+    `include "ei_tdp_ram_reset_inbetween_p1_5_wr_test.sv"
+    //inclusion of reset inbetween p2 5 wr test
+    `include "ei_tdp_ram_reset_inbetween_p2_5_wr_test.sv"
+    //inclusion of reset inbetween p1 5 rd test
+    `include "ei_tdp_ram_reset_inbetween_p1_5_rd_test.sv"
+    //inclusion of reset inbetween p2 5 rd test
+    `include "ei_tdp_ram_reset_inbetween_p2_5_rd_test.sv"
+    //inclusion of p1 wr p2 rd same addr test
+    `include "ei_tdp_ram_p1_wr_p2_rd_same_addr_test.sv"
+    //inclusion of p2 wr p1 rd same addr test
+    `include "ei_tdp_ram_p2_wr_p1_rd_same_addr_test.sv"
 
 endpackage : ei_tdp_ram_package

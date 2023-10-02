@@ -1,6 +1,6 @@
 Chronologic VCS simulator copyright 1991-2021
 Contains Synopsys proprietary information.
-Compiler version S-2021.09-SP2-8_Full64; Runtime version S-2021.09-SP2-8_Full64;  Oct  1 12:51 2023
+Compiler version S-2021.09-SP2-8_Full64; Runtime version S-2021.09-SP2-8_Full64;  Oct  2 08:08 2023
 UVM_INFO @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2
@@ -27,11 +27,11 @@ VCD+ Writer S-2021.09-SP2-8_Full64 Copyright (c) 1991-2021 by Synopsys Inc.
 The design has assertions or cover properties.
 The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
 The file '/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SIM/inter.vpd' was opened successfully.
-UVM_INFO @ 0: reporter [RNTST] Running test ei_tdp_ram_p2_sanity_test_c...
+UVM_INFO @ 0: reporter [RNTST] Running test ei_tdp_ram_p1_sanity_test_c...
 -------------------------------------------------------------------
 Name                       Type                         Size  Value
 -------------------------------------------------------------------
-uvm_test_top               ei_tdp_ram_p2_sanity_test_c  -     @356 
+uvm_test_top               ei_tdp_ram_p1_sanity_test_c  -     @356 
   env_h                    ei_tdp_ram_env_c             -     @369 
     agent_h                ei_tdp_ram_agent_c           -     @384 
       drv_h                ei_tdp_ram_driver_c          -     @559 
@@ -52,33 +52,39 @@ uvm_test_top               ei_tdp_ram_p2_sanity_test_c  -     @356
       analysis_imp         uvm_analysis_imp             -     @411 
       sub_imp              uvm_analysis_imp             -     @626 
 -------------------------------------------------------------------
-UVM_INFO @ 71: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO @ 71: uvm_test_top.env_h.scb_h [Scoreboard Report] --------------------------------
-UVM_INFO @ 71: uvm_test_top.env_h.scb_h [Scoreboard Report] ----     TESTCASE PASSED    ----
-UVM_INFO @ 71: uvm_test_top.env_h.scb_h [Scoreboard Report] --------------------------------
-UVM_INFO @ 71: reporter [UVM/REPORT/SERVER] 
+"/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/assertions/ei_tdp_ram_assertion.sv", 88: ei_tdp_ram_top.binding_file.p1_en_check_a: started at 50ns failed at 50ns
+	Offending '(!(we_a && re_a))'
+UVM_ERROR @ 50: reporter [P1 EN CHK] Both Read and Write are activated together
+UVM_INFO @ 360: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO @ 360: uvm_test_top.env_h.scb_h [Scoreboard Report] --------------------------------
+UVM_INFO @ 360: uvm_test_top.env_h.scb_h [Scoreboard Report] ----     TESTCASE FAILED    ----
+UVM_INFO @ 360: uvm_test_top.env_h.scb_h [Scoreboard Report] --------------------------------
+UVM_INFO @ 360: reporter [UVM/REPORT/SERVER] 
 --- UVM Report Summary ---
 
 ** Report counts by severity
 UVM_INFO :    6
 UVM_WARNING :    0
-UVM_ERROR :    0
+UVM_ERROR :    1
 UVM_FATAL :    0
 ** Report counts by id
+[P1 EN CHK]     1
 [RNTST]     1
 [Scoreboard Report]     3
 [TEST_DONE]     1
 [UVM/RELNOTES]     1
 
 $finish called from file "/home/hitesh.patel/UVM/UVM_1.2/src/base/uvm_root.svh", line 517.
-$finish at simulation time                   71
-Simulation complete, time is 71.
+$finish at simulation time                  360
+"/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/assertions/ei_tdp_ram_assertion.sv", 46: ei_tdp_ram_top.binding_file.clk_freq_check_a: started at 350ns not finished
+"/home/mahammadshahid.shaikh/Desktop/TDP_RAM/TDP-RAM-UVC/Development/SRC/assertions/ei_tdp_ram_assertion.sv", 63: ei_tdp_ram_top.binding_file.on_time_check_a: started at 350ns not finished
+Simulation complete, time is 360 ns.
 Warning: [DVIT111] 
 The design was not compiled with stack debug option.
 Stack debugging cannot be supported for Stack and Local Panes.
 To enable stack debugging capabilities, please compile the design with option '-debug_access+all'.
 Please recompile using the '-debug_access<+options>' switch and incremental options as required.  Recommended options are '-debug_access' for post-process debug, '-debug_access+class' for testbench debug, and '-debug_access+all' for all debug capabilities.  Refer the VCS user guide for more granular options for debug control under the switch '-debug_access' and refer to '-debug_region' for region control.
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 71
-CPU Time:      1.020 seconds;       Data structure size:   0.4Mb
-Sun Oct  1 12:51:34 2023
+Time: 360 ns
+CPU Time:      1.100 seconds;       Data structure size:   0.4Mb
+Mon Oct  2 08:09:13 2023

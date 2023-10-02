@@ -51,9 +51,9 @@ def print_testcases(testcase_list):
 def show_status():
 
     max_name_length = max(len(name) for name in testcase_list)
-    equal_signs = '=' * (max_name_length + 40)      
-    des_signs = '-' * (max_name_length + 40)      
-    header = f'{" ID.":<8}{"TESTCASE NAME":<{max_name_length+1}}{" SEED":<11}TEST STATUS'
+    equal_signs = '=' * (max_name_length + 43)      
+    des_signs = '-' * (max_name_length + 43)      
+    header = f'{" ID.":<8}{"TESTCASE NAME":<{max_name_length+8}}{" SEED":<11}TEST STATUS'
    
     print(equal_signs)
     print(header)
@@ -67,16 +67,16 @@ def show_status():
             #check if available in pass
             if testcase in passed_testcases:
                 for j in passed_testcases[testcase]:
-                    formatted_name = f' {i+1}.\t{testcase}\t\t{str(j)}'.ljust(max_name_length + 1)
+                    formatted_name = f' {i+1}.\t{testcase}{" " * (max_name_length - len(testcase))}\t\t{str(j)}'.ljust(max_name_length + 1)
                     print(formatted_name + '\t', colors.bold, colors.fg.green, colors.bg.cyan,'PASSED', colors.reset)
             #check if available in fail
             if testcase in failed_testcases:
                 for j in failed_testcases[testcase]:
-                    formatted_name = f' {i+1}.\t{testcase}\t\t{str(failed_testcases[testcase][j])}'.ljust(max_name_length + 1)
+                    formatted_name = f' {i+1}.\t{testcase}{" " * (max_name_length - len(testcase))}\t\t{str(failed_testcases[testcase][j])}'.ljust(max_name_length + 1)
                     print(formatted_name + '\t', colors.bold, colors.fg.red, colors.bg.lightgrey, 'FAILED', colors.reset)
         else:
-            formatted_name = f' {i+1}.\t{testcase}'.ljust(max_name_length + 1)
-            print(formatted_name + '\t-\t', colors.bold, colors.fg.black, colors.bg.lightgrey,'NOT TESTED', colors.reset)
+            formatted_name = f' {i+1}.\t{testcase}{" " * (max_name_length - len(testcase))}\t\t-'.ljust(max_name_length + 1)
+            print(formatted_name + '\t', colors.bold, colors.fg.black, colors.bg.lightgrey,'NOT TESTED', colors.reset)
         print(des_signs)
     print(equal_signs)
 
@@ -102,7 +102,7 @@ def run_testcase(testname = 'ei_tdp_ram_base_test', verbosity = ''):
     print("Seed - " + str(seed))
 
     #initial command for run
-    cmd = './simv ' + '+UVM_TESTNAME=' + testname + '_c ' + '+UVM_VERBOSITY=' + verbosity + ' +ntb_random_seed=' + str(seed) + ' +UVM_TIMEOUT=25000'
+    cmd = './simv ' + '+UVM_TESTNAME=' + testname + '_c ' + '+UVM_VERBOSITY=' + verbosity + ' +ntb_random_seed=' + str(seed) + ' +UVM_TIMEOUT=200000'
 
     #when not in debug mode
     if args.debug == False:
@@ -185,8 +185,7 @@ def compile():
     top = '../TOP/ei_tdp_ram_top.sv'
 
     #command to compile the VIP
-    cmd = uvm + ' +vcs+lic+wait -f compile.f ' + top + ' +define+UVM_REPORT_DISABLE_FILE_LINE'
-
+    cmd = uvm + ' -timescale=1ns/1ns' + ' +vcs+lic+wait -f compile.f ' + top + ' +define+UVM_REPORT_DISABLE_FILE_LINE' 
     #execute the command on terminal
     os.system(cmd)
 
@@ -272,7 +271,7 @@ def waveform():
     #check if not null
     if run_test_input != '':
         #create a command
-        cmd = './simv +UVM_TESTNAME=' + testcase_list[int(run_test_input)] + '_c -gui'
+        cmd = './simv +UVM_TESTNAME=' + testcase_list[int(run_test_input) - 1] + '_c -gui'
         #execute the command
         os.system(cmd)
 
@@ -395,7 +394,18 @@ testcase_list = [
 "ei_tdp_ram_p1_wr_with_wr_en_low_test",
 "ei_tdp_ram_p2_wr_with_wr_en_low_test",
 "ei_tdp_ram_p1_rd_with_rd_en_low_test",
-"ei_tdp_ram_p2_rd_with_rd_en_low_test"
+"ei_tdp_ram_p2_rd_with_rd_en_low_test",
+"ei_tdp_ram_p1_5_wr_p1_5_rd_test",
+"ei_tdp_ram_p2_5_wr_p2_5_rd_test",
+"ei_tdp_ram_random_test",
+"ei_tdp_ram_p1_b2b_wr_p1_rd_test",
+"ei_tdp_ram_p2_b2b_wr_p2_rd_test",
+"ei_tdp_ram_reset_inbetween_p1_5_wr_test",
+"ei_tdp_ram_reset_inbetween_p2_5_wr_test",
+"ei_tdp_ram_reset_inbetween_p1_5_rd_test",
+"ei_tdp_ram_reset_inbetween_p2_5_rd_test",
+"ei_tdp_ram_p1_wr_p2_rd_same_addr_test",
+"ei_tdp_ram_p2_wr_p1_rd_same_addr_test"
 ]
 
 #execute only if main

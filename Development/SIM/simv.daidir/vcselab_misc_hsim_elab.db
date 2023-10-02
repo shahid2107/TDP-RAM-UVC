@@ -31,7 +31,7 @@ fHsimTaskFuncXmrsDbg               	0
 fHsimAllTaskFuncXmrs               	0
 fHsimDoXmrProcessing               	1
 fNoMergeDelays                     	0
-uGlblTimeUnit                      	16
+uGlblTimeUnit                      	7
 fHsimAllMtm                        	0
 fSimprofileNew                     	0
 fFsimFlag                          	0
@@ -370,7 +370,7 @@ fVpdDeltaCycleInDesign             	0
 fHsimAllowVecGateInVpd             	1
 fHsimAllowAllVecGateInVpd          	0
 fHsimAllowUdpInVpd                 	1
-fHsimAllowAlwaysCombInVpd          	0
+fHsimAllowAlwaysCombInVpd          	1
 fHsimAllowAlwaysCombCmpDvcSimv     	0
 fHsimAllowAlwaysCombDbg            	0
 fHsimMakeAllP2SPrimary             	0

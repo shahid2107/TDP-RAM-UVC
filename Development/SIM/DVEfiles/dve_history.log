@@ -8,14 +8,14 @@ gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {str
 gui_state_default_create -off -ini
 gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/mahammadshahid.shaikh/Desktop/Verilog_Project/design1/DVEfiles/dve_checkpoint_11711_1.tcl}}
 gui_set_state_value -category Layout -key child_console_size_x -value 1919
-gui_set_state_value -category Layout -key child_console_size_y -value 215
+gui_set_state_value -category Layout -key child_console_size_y -value 212
 gui_set_state_value -category Layout -key child_data_size_x -value 105
-gui_set_state_value -category Layout -key child_data_size_y -value 654
+gui_set_state_value -category Layout -key child_data_size_y -value 657
 gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
 gui_set_state_value -category Layout -key child_hier_colhier -value 216
 gui_set_state_value -category Layout -key child_hier_colpd -value 0
-gui_set_state_value -category Layout -key child_hier_size_x -value 157
-gui_set_state_value -category Layout -key child_hier_size_y -value 654
+gui_set_state_value -category Layout -key child_hier_size_x -value 154
+gui_set_state_value -category Layout -key child_hier_size_y -value 657
 gui_set_state_value -category Layout -key child_list_down -value 719
 gui_set_state_value -category Layout -key child_list_right -value 1764
 gui_set_state_value -category Layout -key child_schematic_docknewline -value false
@@ -26,10 +26,10 @@ gui_set_state_value -category Layout -key child_schematic_size_y -value 710
 gui_set_state_value -category Layout -key child_source_docknewline -value false
 gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
 gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
-gui_set_state_value -category Layout -key child_source_size_x -value 1660
-gui_set_state_value -category Layout -key child_source_size_y -value 649
+gui_set_state_value -category Layout -key child_source_size_x -value 1663
+gui_set_state_value -category Layout -key child_source_size_y -value 652
 gui_set_state_value -category Layout -key child_wave_colname -value 276
-gui_set_state_value -category Layout -key child_wave_colvalue -value 277
+gui_set_state_value -category Layout -key child_wave_colvalue -value 276
 gui_set_state_value -category Layout -key child_wave_left -value 557
 gui_set_state_value -category Layout -key child_wave_right -value 1357
 gui_set_state_value -category Layout -key main_pos_x -value 1
@@ -63,12 +63,16 @@ gui_state_default_create -off
 # Begin command logging
 gui_set_pref_value -category {Globals} -key {smart_resize} -value {false}
 gui_set_pref_value -category {Globals} -key {smart_resize} -value {true}
-gui_sim_run Ucli -exe ./simv -args {-ucligui  +UVM_TESTNAME=ei_tdp_ram_p2_sanity_test_c} -dir .
+gui_sim_run Ucli -exe ./simv -args {-ucligui  +UVM_TESTNAME=ei_tdp_ram_p1_sanity_test_c} -dir .
 gui_list_expand -id  Hier.1   ei_tdp_ram_top
 gui_list_select -id Hier.1 -current_item_name ei_tdp_ram_top.pif -current_item_type Scope  -selected  { ei_tdp_ram_top.pif   }
+gui_list_show_data -select -id  Hier.1   ei_tdp_ram_top.pif
+gui_list_select -id Hier.1 -current_item_name ei_tdp_ram_top.binding_file -current_item_type Scope  -selected  { ei_tdp_ram_top.pif  ei_tdp_ram_top.binding_file   }
 gui_open_window Wave
-gui_list_add -id Wave.1 -from Hier.1 { ei_tdp_ram_top.pif } -insertionbar
+gui_list_add -id Wave.1 -from Hier.1 { ei_tdp_ram_top.binding_file ei_tdp_ram_top.pif } -insertionbar
 gui_wv_zoom_timerange -id  Wave.1 0 445
 gui_sim_continue  
 gui_zoom -window Wave.1 -full
+gui_list_expand -id  Wave.1   ei_tdp_ram_top.binding_file.on_time_check_a
+gui_marker_move -id  Wave.1 C1 50
 gui_close_window -window TopLevel.2

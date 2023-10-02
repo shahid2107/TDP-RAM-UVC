@@ -17,6 +17,10 @@ import uvm_pkg::*;
 `define ADDR_WIDTH 10
 `define DATA_WIDTH 8
 
+//macros for frequency and duty cycle
+`define FREQUENCY 10000000
+`define DUTY_CYCLE 50
+
 //import package for tdp ram
 `include "ei_tdp_ram_package.sv"
 import ei_tdp_ram_package::*;
@@ -59,6 +63,23 @@ module ei_tdp_ram_top();
                         .q_b(pif.out_b)
                     );
 
+    //binding the assertion module
+    bind ei_tdp_ram_top ei_tdp_ram_assertion #(.ADDR_WIDTH(`ADDR_WIDTH), .DATA_WIDTH(`DATA_WIDTH)) binding_file
+        (
+            .clk(pif.clk),
+            .resetn(pif.resetn),
+            .data_a(pif.data_a),
+            .data_b(pif.data_b),
+            .addr_a(pif.addr_a),
+            .addr_b(pif.addr_b),
+            .we_a(pif.we_a),
+            .we_b(pif.we_b),
+            .re_a(pif.re_a),
+            .re_b(pif.re_b),
+            .out_a(pif.out_a),
+            .out_b(pif.out_b)
+        );
+
     //block to invoke test and store pif in config db
     initial
     begin
@@ -70,6 +91,14 @@ module ei_tdp_ram_top();
         run_test();
     end
 
+    //parameter calculation block
+    initial 
+    begin
+        time_period = ((1.0/`FREQUENCY)*(1e9)); 
+        on_time = ((`DUTY_CYCLE/100.0)*time_period);
+        off_time = (((100-`DUTY_CYCLE)/100.0)*time_period);
+    end
+
     //clock generation block
     initial
     begin
@@ -77,7 +106,8 @@ module ei_tdp_ram_top();
         //resetn = 1'b1;
         forever
         begin
-            #10 clk = ~clk;
+            #(off_time) clk = 1;
+            #(on_time) clk = 0;
         end
     end
 

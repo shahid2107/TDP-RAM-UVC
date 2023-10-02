@@ -1,0 +1,2645 @@
+Chronologic VCS simulator copyright 1991-2021
+Contains Synopsys proprietary information.
+Compiler version S-2021.09-SP2-8_Full64; Runtime version S-2021.09-SP2-8_Full64;  Oct  2 11:27 2023
+UVM_INFO @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test ei_tdp_ram_random_test_c...
+UVM_INFO @ 0: reporter [TIMOUTSET] '+UVM_TIMEOUT=200000' provided on the command line is being applied.
+UVM_INFO @ 0: uvm_test_top [Base Test] Build Phase
+UVM_INFO @ 0: uvm_test_top [Random Test] Build Phase
+UVM_INFO @ 0: uvm_test_top.env_h [Environment] Build Phase
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h [Agent] Build Phase
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.drv_h [Driver] Build Phase
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.mon_h [Monitor] Build Phase
+UVM_INFO @ 0: uvm_test_top.env_h.scb_h [Scoreboard] Build Phase
+UVM_INFO @ 0: uvm_test_top.env_h.sub_h [Subscriber] Build Phase
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h [Agent] Connect Phase
+UVM_INFO @ 0: uvm_test_top.env_h [Environment] Connect Phase
+UVM_INFO @ 0: uvm_test_top [Random Test] End-of-elaboration Phase
+----------------------------------------------------------------
+Name                       Type                      Size  Value
+----------------------------------------------------------------
+uvm_test_top               ei_tdp_ram_random_test_c  -     @356 
+  env_h                    ei_tdp_ram_env_c          -     @373 
+    agent_h                ei_tdp_ram_agent_c        -     @392 
+      drv_h                ei_tdp_ram_driver_c       -     @569 
+        rsp_port           uvm_analysis_port         -     @588 
+        seq_item_port      uvm_seq_item_pull_port    -     @578 
+      mon_h                ei_tdp_ram_monitor_c      -     @598 
+        mon_port           uvm_analysis_port         -     @613 
+      seqr_h               ei_tdp_ram_sequencer_c    -     @432 
+        rsp_export         uvm_analysis_export       -     @441 
+        seq_item_export    uvm_seq_item_pull_imp     -     @559 
+        arbitration_queue  array                     0     -    
+        lock_queue         array                     0     -    
+        num_last_reqs      integral                  32    'd1  
+        num_last_rsps      integral                  32    'd1  
+    scb_h                  ei_tdp_ram_scoreboard_c   -     @401 
+      scb_imp              uvm_analysis_imp          -     @631 
+    sub_h                  ei_tdp_ram_subscriber_c   -     @410 
+      analysis_imp         uvm_analysis_imp          -     @419 
+      sub_imp              uvm_analysis_imp          -     @644 
+----------------------------------------------------------------
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'run'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.drv_h [Driver] Run Phase
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.mon_h [Monitor] Run Phase
+UVM_INFO @ 0: uvm_test_top.env_h.scb_h [Scoreboard] Run Phase
+UVM_INFO @ 0: uvm_test_top.env_h.sub_h [Subscriber] Run Phase
+UVM_INFO @ 0: uvm_test_top [Base Test] Run Phase
+UVM_INFO @ 0: uvm_test_top [Random Test] Run Phase
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'pre_reset'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.pre_reset' (id=239) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'pre_reset'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'reset'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.reset' (id=248) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'reset'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'post_reset'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.post_reset' (id=257) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'post_reset'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'pre_configure'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.pre_configure' (id=266) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'pre_configure'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'configure'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.configure' (id=275) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'configure'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'post_configure'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.post_configure' (id=284) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'post_configure'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'pre_main'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.pre_main' (id=293) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'pre_main'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'main'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.main' (id=302) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'main'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'post_main'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.post_main' (id=311) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'post_main'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'pre_shutdown'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.pre_shutdown' (id=320) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'pre_shutdown'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'shutdown'
+UVM_INFO @ 0: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.shutdown' (id=329) PHASE READY TO END
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'shutdown'
+UVM_INFO @ 0: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default phase sequence for phase 'post_shutdown'
+UVM_INFO @ 50: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @692 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hbf 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 100: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 150: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @802 
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h0  
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 150: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @802 
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h0  
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 150: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @802 
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h0  
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 150: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @796 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hce 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 150: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 150: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 150: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 150: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 200: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 250: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @832 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hbf 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd1  
+--------------------------------------------
+
+UVM_INFO @ 250: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @832 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hbf 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd1  
+--------------------------------------------
+
+UVM_INFO @ 250: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @832 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hbf 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd1  
+--------------------------------------------
+
+UVM_INFO @ 250: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 250: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @818 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hd7 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 250: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 250: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 250: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 250: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 300: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 350: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @864 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hce 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd2  
+--------------------------------------------
+
+UVM_INFO @ 350: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @864 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hce 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd2  
+--------------------------------------------
+
+UVM_INFO @ 350: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @864 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hce 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd2  
+--------------------------------------------
+
+UVM_INFO @ 350: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 350: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @850 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hc0 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 350: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 350: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 350: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 350: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 400: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 450: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @896 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hd7 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd3  
+--------------------------------------------
+
+UVM_INFO @ 450: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @896 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hd7 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd3  
+--------------------------------------------
+
+UVM_INFO @ 450: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @896 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hd7 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd3  
+--------------------------------------------
+
+UVM_INFO @ 450: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 450: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @882 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'h20 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 450: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 450: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 450: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 450: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 500: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 550: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @928 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hc0 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd4  
+--------------------------------------------
+
+UVM_INFO @ 550: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @928 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hc0 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd4  
+--------------------------------------------
+
+UVM_INFO @ 550: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @928 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hc0 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd4  
+--------------------------------------------
+
+UVM_INFO @ 550: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 550: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @914 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hd8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 550: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 550: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 550: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 550: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 600: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 650: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @960 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'h20 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd5  
+--------------------------------------------
+
+UVM_INFO @ 650: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @960 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'h20 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd5  
+--------------------------------------------
+
+UVM_INFO @ 650: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @960 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'h20 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd5  
+--------------------------------------------
+
+UVM_INFO @ 650: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 650: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @946 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'h24 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 650: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 650: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 650: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 650: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 700: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 750: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @994 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hd8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd6  
+--------------------------------------------
+
+UVM_INFO @ 750: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @994 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hd8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd6  
+--------------------------------------------
+
+UVM_INFO @ 750: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @994 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'hd8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd6  
+--------------------------------------------
+
+UVM_INFO @ 750: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 750: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @980 
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h19f
+  data_a  integral               8     'h2d 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hd5 
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 750: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 750: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 750: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 750: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 800: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 850: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1026
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'h24 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd7  
+--------------------------------------------
+
+UVM_INFO @ 850: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1026
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'h24 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd7  
+--------------------------------------------
+
+UVM_INFO @ 850: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1026
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he5 
+  data_a  integral               8     'h24 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd7  
+--------------------------------------------
+
+UVM_INFO @ 850: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 850: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1012
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h3e4
+  data_a  integral               8     'hb8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hb4 
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 850: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 850: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 850: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 850: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 900: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 950: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1058
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h19f
+  data_a  integral               8     'h2d 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hd5 
+  out_b   integral               8     'h0  
+  count   integral               32    'd8  
+--------------------------------------------
+
+UVM_INFO @ 950: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1058
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h19f
+  data_a  integral               8     'h2d 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hd5 
+  out_b   integral               8     'h0  
+  count   integral               32    'd8  
+--------------------------------------------
+
+UVM_INFO @ 950: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1058
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h19f
+  data_a  integral               8     'h2d 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hd5 
+  out_b   integral               8     'h0  
+  count   integral               32    'd8  
+--------------------------------------------
+
+UVM_INFO @ 950: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 950: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Writing in Scoreboard Memory
+UVM_INFO @ 950: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1044
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h2eb
+  data_a  integral               8     'h76 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h62 
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 950: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 950: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 950: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 950: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 1000: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 1050: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1092
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h3e4
+  data_a  integral               8     'hb8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hb4 
+  out_b   integral               8     'h0  
+  count   integral               32    'd9  
+--------------------------------------------
+
+UVM_INFO @ 1050: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1092
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h3e4
+  data_a  integral               8     'hb8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hb4 
+  out_b   integral               8     'h0  
+  count   integral               32    'd9  
+--------------------------------------------
+
+UVM_INFO @ 1050: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1092
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h3e4
+  data_a  integral               8     'hb8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hb4 
+  out_b   integral               8     'h0  
+  count   integral               32    'd9  
+--------------------------------------------
+
+UVM_INFO @ 1050: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 1050: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Writing in Scoreboard Memory
+UVM_INFO @ 1050: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1078
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h37d
+  data_a  integral               8     'h2b 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h4  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 1050: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1050: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1050: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 1050: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 1100: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 1150: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1126
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h2eb
+  data_a  integral               8     'h76 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h62 
+  out_b   integral               8     'h0  
+  count   integral               32    'd10 
+--------------------------------------------
+
+UVM_INFO @ 1150: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1126
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h2eb
+  data_a  integral               8     'h76 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h62 
+  out_b   integral               8     'h0  
+  count   integral               32    'd10 
+--------------------------------------------
+
+UVM_INFO @ 1150: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1126
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h2eb
+  data_a  integral               8     'h76 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h62 
+  out_b   integral               8     'h0  
+  count   integral               32    'd10 
+--------------------------------------------
+
+UVM_INFO @ 1150: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 1150: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Writing in Scoreboard Memory
+UVM_INFO @ 1150: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1112
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h39b
+  data_a  integral               8     'h33 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h82 
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 1150: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1150: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1150: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 1150: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 1200: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 1250: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1160
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h37d
+  data_a  integral               8     'h2b 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h4  
+  out_b   integral               8     'h0  
+  count   integral               32    'd11 
+--------------------------------------------
+
+UVM_INFO @ 1250: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1160
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h37d
+  data_a  integral               8     'h2b 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h4  
+  out_b   integral               8     'h0  
+  count   integral               32    'd11 
+--------------------------------------------
+
+UVM_INFO @ 1250: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1160
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h37d
+  data_a  integral               8     'h2b 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h4  
+  out_b   integral               8     'h0  
+  count   integral               32    'd11 
+--------------------------------------------
+
+UVM_INFO @ 1250: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 1250: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Writing in Scoreboard Memory
+UVM_INFO @ 1250: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1146
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h336
+  data_a  integral               8     'h33 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hfb 
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 1250: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1250: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1250: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 1250: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 1300: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 1350: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1194
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h39b
+  data_a  integral               8     'h33 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h82 
+  out_b   integral               8     'h0  
+  count   integral               32    'd12 
+--------------------------------------------
+
+UVM_INFO @ 1350: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1194
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h39b
+  data_a  integral               8     'h33 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h82 
+  out_b   integral               8     'h0  
+  count   integral               32    'd12 
+--------------------------------------------
+
+UVM_INFO @ 1350: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1194
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h39b
+  data_a  integral               8     'h33 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h82 
+  out_b   integral               8     'h0  
+  count   integral               32    'd12 
+--------------------------------------------
+
+UVM_INFO @ 1350: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 1350: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Writing in Scoreboard Memory
+UVM_INFO @ 1350: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1180
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1b6
+  data_a  integral               8     'hd5 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h10 
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 1350: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1350: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1350: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 1350: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 1400: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 1450: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1228
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h336
+  data_a  integral               8     'h33 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hfb 
+  out_b   integral               8     'h0  
+  count   integral               32    'd13 
+--------------------------------------------
+
+UVM_INFO @ 1450: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1228
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h336
+  data_a  integral               8     'h33 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hfb 
+  out_b   integral               8     'h0  
+  count   integral               32    'd13 
+--------------------------------------------
+
+UVM_INFO @ 1450: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1228
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h336
+  data_a  integral               8     'h33 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'hfb 
+  out_b   integral               8     'h0  
+  count   integral               32    'd13 
+--------------------------------------------
+
+UVM_INFO @ 1450: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 1450: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Writing in Scoreboard Memory
+UVM_INFO @ 1450: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1214
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h60 
+  data_a  integral               8     'h29 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h30 
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 1450: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1450: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1450: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 1450: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 1500: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 1550: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1262
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1b6
+  data_a  integral               8     'hd5 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h10 
+  out_b   integral               8     'h0  
+  count   integral               32    'd14 
+--------------------------------------------
+
+UVM_INFO @ 1550: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1262
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1b6
+  data_a  integral               8     'hd5 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h10 
+  out_b   integral               8     'h0  
+  count   integral               32    'd14 
+--------------------------------------------
+
+UVM_INFO @ 1550: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1262
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1b6
+  data_a  integral               8     'hd5 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h10 
+  out_b   integral               8     'h0  
+  count   integral               32    'd14 
+--------------------------------------------
+
+UVM_INFO @ 1550: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 1550: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Writing in Scoreboard Memory
+UVM_INFO @ 1550: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1248
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h3dd
+  data_a  integral               8     'h34 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'ha4 
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 1550: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1550: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1550: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 1550: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 1600: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 1650: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1298
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h60 
+  data_a  integral               8     'h29 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h30 
+  out_b   integral               8     'h0  
+  count   integral               32    'd15 
+--------------------------------------------
+
+UVM_INFO @ 1650: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1298
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h60 
+  data_a  integral               8     'h29 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h30 
+  out_b   integral               8     'h0  
+  count   integral               32    'd15 
+--------------------------------------------
+
+UVM_INFO @ 1650: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1298
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h60 
+  data_a  integral               8     'h29 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'h30 
+  out_b   integral               8     'h0  
+  count   integral               32    'd15 
+--------------------------------------------
+
+UVM_INFO @ 1650: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 1650: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Writing in Scoreboard Memory
+UVM_INFO @ 1650: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1284
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h5f 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 1650: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1650: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1650: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 1650: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 1700: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 1750: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1332
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h3dd
+  data_a  integral               8     'h34 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'ha4 
+  out_b   integral               8     'h0  
+  count   integral               32    'd16 
+--------------------------------------------
+
+UVM_INFO @ 1750: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1332
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h3dd
+  data_a  integral               8     'h34 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'ha4 
+  out_b   integral               8     'h0  
+  count   integral               32    'd16 
+--------------------------------------------
+
+UVM_INFO @ 1750: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1332
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h3dd
+  data_a  integral               8     'h34 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h1  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'hc9 
+  data_b  integral               8     'ha4 
+  out_b   integral               8     'h0  
+  count   integral               32    'd16 
+--------------------------------------------
+
+UVM_INFO @ 1750: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 1750: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Writing in Scoreboard Memory
+UVM_INFO @ 1750: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1318
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'ha9 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 1750: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1750: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1750: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 1750: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 1800: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 1850: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1366
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h5f 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd17 
+--------------------------------------------
+
+UVM_INFO @ 1850: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1366
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h5f 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd17 
+--------------------------------------------
+
+UVM_INFO @ 1850: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1366
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h5f 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd17 
+--------------------------------------------
+
+UVM_INFO @ 1850: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 1850: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1352
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h9c 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 1850: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1850: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1850: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 1850: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 1900: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 1950: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1398
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'ha9 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd18 
+--------------------------------------------
+
+UVM_INFO @ 1950: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1398
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'ha9 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd18 
+--------------------------------------------
+
+UVM_INFO @ 1950: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1398
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'ha9 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd18 
+--------------------------------------------
+
+UVM_INFO @ 1950: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 1950: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1384
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h4f 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 1950: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1950: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 1950: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 1950: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 2000: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 2050: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1432
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h9c 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd19 
+--------------------------------------------
+
+UVM_INFO @ 2050: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1432
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h9c 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd19 
+--------------------------------------------
+
+UVM_INFO @ 2050: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1432
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h9c 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd19 
+--------------------------------------------
+
+UVM_INFO @ 2050: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 2050: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1418
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h26b
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 2050: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2050: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2050: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 2050: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 2100: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 2150: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1464
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h4f 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd20 
+--------------------------------------------
+
+UVM_INFO @ 2150: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1464
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h4f 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd20 
+--------------------------------------------
+
+UVM_INFO @ 2150: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1464
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h1e7
+  data_a  integral               8     'h4f 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd20 
+--------------------------------------------
+
+UVM_INFO @ 2150: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 2150: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1450
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h343
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 2150: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2150: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2150: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 2200: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 2250: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1494
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h26b
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd21 
+--------------------------------------------
+
+UVM_INFO @ 2250: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1494
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h26b
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd21 
+--------------------------------------------
+
+UVM_INFO @ 2250: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1494
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h26b
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd21 
+--------------------------------------------
+
+UVM_INFO @ 2250: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Reading from Scoreboard Memory
+UVM_INFO @ 2250: uvm_test_top.env_h.scb_h [Scoreboard] Expected Read Data(Port A) is matching with Actual Data(Port A)
+UVM_INFO @ 2250: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Reading from Scoreboard Memory
+UVM_INFO @ 2250: uvm_test_top.env_h.scb_h [Scoreboard] Expected Read Data(Port B) is matching with Actual Data(Port B)
+UVM_INFO @ 2250: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1482
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h3a0
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 2250: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2250: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2250: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 2300: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 2350: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1530
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h343
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd22 
+--------------------------------------------
+
+UVM_INFO @ 2350: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1530
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h343
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd22 
+--------------------------------------------
+
+UVM_INFO @ 2350: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1530
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h343
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd22 
+--------------------------------------------
+
+UVM_INFO @ 2350: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Reading from Scoreboard Memory
+UVM_INFO @ 2350: uvm_test_top.env_h.scb_h [Scoreboard] Expected Read Data(Port A) is matching with Actual Data(Port A)
+UVM_INFO @ 2350: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Reading from Scoreboard Memory
+UVM_INFO @ 2350: uvm_test_top.env_h.scb_h [Scoreboard] Expected Read Data(Port B) is matching with Actual Data(Port B)
+UVM_INFO @ 2350: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1518
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h79 
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 2350: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2350: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2350: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 2400: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 2450: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1568
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h3a0
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd23 
+--------------------------------------------
+
+UVM_INFO @ 2450: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1568
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h3a0
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd23 
+--------------------------------------------
+
+UVM_INFO @ 2450: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1568
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h3a0
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd23 
+--------------------------------------------
+
+UVM_INFO @ 2450: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Reading from Scoreboard Memory
+UVM_INFO @ 2450: uvm_test_top.env_h.scb_h [Scoreboard] Expected Read Data(Port A) is matching with Actual Data(Port A)
+UVM_INFO @ 2450: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Reading from Scoreboard Memory
+UVM_INFO @ 2450: uvm_test_top.env_h.scb_h [Scoreboard] Expected Read Data(Port B) is matching with Actual Data(Port B)
+UVM_INFO @ 2450: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1556
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h36a
+  data_a  integral               8     'ha5 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 2450: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2450: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2450: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 2500: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 2550: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1604
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h79 
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd24 
+--------------------------------------------
+
+UVM_INFO @ 2550: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1604
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h79 
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd24 
+--------------------------------------------
+
+UVM_INFO @ 2550: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1604
+  we_a    integral               1     'h0  
+  re_a    integral               1     'h1  
+  addr_a  integral               10    'h372
+  data_a  integral               8     'h0  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h1  
+  addr_b  integral               10    'h79 
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd24 
+--------------------------------------------
+
+UVM_INFO @ 2550: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Reading from Scoreboard Memory
+UVM_INFO @ 2550: uvm_test_top.env_h.scb_h [Scoreboard] Expected Read Data(Port A) is matching with Actual Data(Port A)
+UVM_INFO @ 2550: uvm_test_top.env_h.scb_h [Scoreboard] (Port B)Reading from Scoreboard Memory
+UVM_INFO @ 2550: uvm_test_top.env_h.scb_h [Scoreboard] Expected Read Data(Port B) is matching with Actual Data(Port B)
+UVM_INFO @ 2550: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1592
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h9  
+  data_a  integral               8     'h5e 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 2550: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2550: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2550: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 2550: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 2600: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 2650: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1642
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h36a
+  data_a  integral               8     'ha5 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd25 
+--------------------------------------------
+
+UVM_INFO @ 2650: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1642
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h36a
+  data_a  integral               8     'ha5 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd25 
+--------------------------------------------
+
+UVM_INFO @ 2650: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1642
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h36a
+  data_a  integral               8     'ha5 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd25 
+--------------------------------------------
+
+UVM_INFO @ 2650: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 2650: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1628
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h20a
+  data_a  integral               8     'h87 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 2650: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2650: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2650: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 2650: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 2700: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 2750: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1674
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h9  
+  data_a  integral               8     'h5e 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd26 
+--------------------------------------------
+
+UVM_INFO @ 2750: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1674
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h9  
+  data_a  integral               8     'h5e 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd26 
+--------------------------------------------
+
+UVM_INFO @ 2750: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1674
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h9  
+  data_a  integral               8     'h5e 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd26 
+--------------------------------------------
+
+UVM_INFO @ 2750: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 2750: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1660
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h18b
+  data_a  integral               8     'he  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 2750: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2750: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2750: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 2750: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 2800: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 2850: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1706
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h20a
+  data_a  integral               8     'h87 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd27 
+--------------------------------------------
+
+UVM_INFO @ 2850: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1706
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h20a
+  data_a  integral               8     'h87 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd27 
+--------------------------------------------
+
+UVM_INFO @ 2850: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1706
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h20a
+  data_a  integral               8     'h87 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd27 
+--------------------------------------------
+
+UVM_INFO @ 2850: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 2850: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1692
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he2 
+  data_a  integral               8     'hda 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 2850: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2850: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2850: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 2850: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 2900: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 2950: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1738
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h18b
+  data_a  integral               8     'he  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd28 
+--------------------------------------------
+
+UVM_INFO @ 2950: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1738
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h18b
+  data_a  integral               8     'he  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd28 
+--------------------------------------------
+
+UVM_INFO @ 2950: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1738
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h18b
+  data_a  integral               8     'he  
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd28 
+--------------------------------------------
+
+UVM_INFO @ 2950: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 2950: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1724
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h385
+  data_a  integral               8     'h57 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 2950: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2950: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 2950: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 2950: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 3000: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 3050: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1770
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he2 
+  data_a  integral               8     'hda 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd29 
+--------------------------------------------
+
+UVM_INFO @ 3050: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1770
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he2 
+  data_a  integral               8     'hda 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd29 
+--------------------------------------------
+
+UVM_INFO @ 3050: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1770
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'he2 
+  data_a  integral               8     'hda 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd29 
+--------------------------------------------
+
+UVM_INFO @ 3050: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 3050: uvm_test_top.env_h.agent_h.drv_h [Driver] Received a packet from Sequencer
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1756
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h257
+  data_a  integral               8     'ha8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd0  
+--------------------------------------------
+
+UVM_INFO @ 3050: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 3050: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 3050: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 3050: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 3100: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 3150: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1796
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h385
+  data_a  integral               8     'h57 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd30 
+--------------------------------------------
+
+UVM_INFO @ 3150: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1796
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h385
+  data_a  integral               8     'h57 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd30 
+--------------------------------------------
+
+UVM_INFO @ 3150: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1796
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h385
+  data_a  integral               8     'h57 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd30 
+--------------------------------------------
+
+UVM_INFO @ 3150: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 3150: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 3150: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 3150: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 3150: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 3200: reporter [CLK ON TIME CHK] Correct On Time of Clock
+UVM_INFO @ 3250: uvm_test_top.env_h.agent_h.mon_h [Monitor] Item Collected
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1818
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h257
+  data_a  integral               8     'ha8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd31 
+--------------------------------------------
+
+UVM_INFO @ 3250: uvm_test_top.env_h.scb_h [Scoreboard] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1818
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h257
+  data_a  integral               8     'ha8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd31 
+--------------------------------------------
+
+UVM_INFO @ 3250: uvm_test_top.env_h.sub_h [Subscriber] Received a packet from Monitor
+--------------------------------------------
+Name      Type                   Size  Value
+--------------------------------------------
+tr_h      ei_tdp_ram_seq_item_c  -     @1818
+  we_a    integral               1     'h1  
+  re_a    integral               1     'h0  
+  addr_a  integral               10    'h257
+  data_a  integral               8     'ha8 
+  out_a   integral               8     'h0  
+  we_b    integral               1     'h0  
+  re_b    integral               1     'h0  
+  addr_b  integral               10    'h0  
+  data_b  integral               8     'h0  
+  out_b   integral               8     'h0  
+  count   integral               32    'd31 
+--------------------------------------------
+
+UVM_INFO @ 3250: uvm_test_top.env_h.scb_h [Scoreboard] (Port A)Writing in Scoreboard Memory
+UVM_INFO @ 3250: reporter [P1 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 3250: reporter [P2 EN CHK] Both Read and Write are not activated together
+UVM_INFO @ 3250: reporter [P1 Wr En] Address and Data are Known
+UVM_INFO @ 3250: reporter [CLK FREQ CHK] Correct Clock Frequency Generated
+UVM_INFO @ 3260: reporter [TEST_DONE] All end-of-test objections have been dropped. Calling stop tasks
+UVM_INFO @ 3260: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO @ 3260: reporter [PH/TRC/EXE/ALLDROP] Phase 'common.run' (id=214) PHASE EXIT ALL_DROPPED
+UVM_INFO @ 3260: reporter [PH_READY_TO_END] Phase 'uvm.uvm_sched.post_shutdown' (id=338) PHASE READY TO END
+UVM_INFO @ 3260: reporter [PH_READY_TO_END] Phase 'common.run' (id=214) PHASE READY TO END
+UVM_INFO @ 3260: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'run'
+UVM_INFO @ 3260: uvm_test_top.env_h.agent_h.seqr_h [PHASESEQ] No default sequence to kill for phase 'post_shutdown'
+UVM_INFO @ 3260: uvm_test_top.env_h.scb_h [Scoreboard] Report Phase
+UVM_INFO @ 3260: uvm_test_top.env_h.scb_h [Scoreboard Report] --------------------------------
+UVM_INFO @ 3260: uvm_test_top.env_h.scb_h [Scoreboard Report] ----     TESTCASE PASSED    ----
+UVM_INFO @ 3260: uvm_test_top.env_h.scb_h [Scoreboard Report] --------------------------------
+UVM_INFO @ 3260: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  401
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[Agent]     2
+[Base Test]     2
+[CLK FREQ CHK]    32
+[CLK ON TIME CHK]    32
+[Driver]    33
+[Environment]     2
+[Monitor]    34
+[P1 EN CHK]    32
+[P1 Wr En]    28
+[P2 EN CHK]    32
+[PH/TRC/EXE/ALLDROP]     1
+[PHASESEQ]    26
+[PH_READY_TO_END]    13
+[RNTST]     1
+[Random Test]     3
+[Scoreboard]    87
+[Scoreboard Report]     3
+[Subscriber]    34
+[TEST_DONE]     2
+[TIMOUTSET]     1
+[UVM/RELNOTES]     1
+
+$finish called from file "/home/hitesh.patel/UVM/UVM_1.2/src/base/uvm_root.svh", line 517.
+$finish at simulation time                 3260
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3260 ns
+CPU Time:      0.900 seconds;       Data structure size:   0.4Mb
+Mon Oct  2 11:27:03 2023

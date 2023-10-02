@@ -140,7 +140,7 @@ task ei_tdp_ram_p2_wr_whole_rd_test_c::run_phase(uvm_phase phase);
     end
 
     //setting the drain time 
-    phase.phase_done.set_drain_time(this, 41);
+    phase.phase_done.set_drain_time(this, 210);
     //drop the objection
     phase.drop_objection(this);
 

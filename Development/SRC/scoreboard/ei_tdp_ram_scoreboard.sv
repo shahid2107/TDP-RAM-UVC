@@ -137,7 +137,7 @@ task ei_tdp_ram_scoreboard_c::run_phase(uvm_phase phase);
         //checking for read enable for port A
         if(tr_h.re_a)
         begin
-            `uvm_info("Scoreboard", "(Port B)Reading from Scoreboard Memory", UVM_DEBUG)
+            `uvm_info("Scoreboard", "(Port A)Reading from Scoreboard Memory", UVM_DEBUG)
             //comparing scoreboard memory and actual data received
             if(scb_mem[tr_h.addr_a] != tr_h.out_a)
             begin

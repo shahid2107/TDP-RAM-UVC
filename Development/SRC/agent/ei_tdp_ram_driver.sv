@@ -120,7 +120,7 @@ task ei_tdp_ram_driver_c::run_phase(uvm_phase phase);
 
                 //requesting new packet from sequencer
                 seq_item_port.get_next_item(req);
-                `uvm_info("Driver", $sformatf("Received a packet from\n%s", req.sprint()), UVM_FULL)
+                `uvm_info("Driver", $sformatf("Received a packet from Sequencer\n%s", req.sprint()), UVM_FULL)
                 //callback hook
                 `uvm_do_callbacks(ei_tdp_ram_driver_c, ei_tdp_ram_driver_cb_c, ei_tdp_ram_modify_packet_t(req))
 

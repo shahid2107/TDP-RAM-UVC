@@ -19,22 +19,31 @@ class ei_tdp_ram_dual_port_sanity_sequence_c extends ei_tdp_ram_base_sequence_c;
     `uvm_object_utils(ei_tdp_ram_dual_port_sanity_sequence_c)
 
     //operation type on both port
-    ei_tdp_ram_port_operation_e port_a_op;
-    ei_tdp_ram_port_operation_e port_b_op;
+    rand ei_tdp_ram_port_operation_e port_a_op;
+    rand ei_tdp_ram_port_operation_e port_b_op;
 
     //variable for total number of transactions
-    int no_of_transactions;
+    rand int no_of_transactions;
 
     //transaction class object
     ei_tdp_ram_seq_item_c tr_h;
 
     //local variable to store addresses
-    bit [`ADDR_WIDTH - 1 : 0] address_a;
-    bit [`ADDR_WIDTH - 1 : 0] address_b;
+    rand bit [`ADDR_WIDTH - 1 : 0] address_a;
+    rand bit [`ADDR_WIDTH - 1 : 0] address_b;
     
     //flag to select address to be random or specific
-    bit addr_random_a;
-    bit addr_random_b;
+    rand bit addr_random_a;
+    rand bit addr_random_b;
+
+    //constraint to have number of transactions more than 0
+    constraint c_no_tr { no_of_transactions > 0; no_of_transactions < 10;}
+
+    //constraint to have any one port working
+    constraint c_op {
+        port_a_op == NO_OP -> port_b_op != NO_OP;
+        port_b_op == NO_OP -> port_a_op != NO_OP;
+    }
 
     //user-defined constructor declaration
     extern function new(string name = "dual_port_seq_h");
