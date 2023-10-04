@@ -81,10 +81,12 @@ optional arguments:
   -h, --help            show this help message and exit
   
   -e {compile,run,compile_and_run,waveform,regression}, --execute {compile,run,compile_and_run,waveform,regression}
+                        
                         Type of Execution : 1. compile 2. run 3.
                         compile_and_run 4. waveforms 5. regression
   
   -v {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}, --verbosity {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}
+                        
                         Verbosity Type : 1. NONE 2. LOW 3. MEDIUM 4. HIGH 5.                      
                         FULL 6. DEBUG
   
@@ -95,6 +97,7 @@ optional arguments:
   -l, --logfile         To create log file of output
   
   -n TESTNAME, --testname TESTNAME
+                        
                         To execute testcase mentioned from CLI input
   
   -s, --status          To show status pf each testcases at the end of
@@ -103,11 +106,14 @@ optional arguments:
   -db, --debug          To see executed command
   
   -ms MANUAL_SEED, --manual_seed MANUAL_SEED
+                        
                         To select seed for all testcases
 
   -t TIMES, --times TIMES
+                        
                         To select how many times each testcases is to be
                         executed
+
 
 
 **Directory Structure**
