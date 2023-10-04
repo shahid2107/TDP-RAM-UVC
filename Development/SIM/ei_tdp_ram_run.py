@@ -72,7 +72,7 @@ def show_status():
             #check if available in fail
             if testcase in failed_testcases:
                 for j in failed_testcases[testcase]:
-                    formatted_name = f' {i+1}.\t{testcase}{" " * (max_name_length - len(testcase))}\t\t{str(failed_testcases[testcase][j])}'.ljust(max_name_length + 1)
+                    formatted_name = f' {i+1}.\t{testcase}{" " * (max_name_length - len(testcase))}\t\t{str(j)}'.ljust(max_name_length + 1)
                     print(formatted_name + '\t', colors.bold, colors.fg.red, colors.bg.lightgrey, 'FAILED', colors.reset)
         else:
             formatted_name = f' {i+1}.\t{testcase}{" " * (max_name_length - len(testcase))}\t\t-'.ljust(max_name_length + 1)
@@ -268,10 +268,20 @@ def waveform():
     print_testcases(testcase_list)
     run_test_input = input('select any testcase from above to observe waveform: ')
 
+    #seed variable
+    seed = 0
+    #checking if manual-seed is available
+    if args.manual_seed:
+        #store that seed
+        seed = int(str(args.manual_seed))
+    else:
+        #else random seed
+        seed = rand.randint(0, 1000)
+
     #check if not null
     if run_test_input != '':
         #create a command
-        cmd = './simv +UVM_TESTNAME=' + testcase_list[int(run_test_input) - 1] + '_c -gui'
+        cmd = './simv +UVM_TESTNAME=' + testcase_list[int(run_test_input) - 1] + '_c +ntb_random_seed=' + str(seed) + ' -gui'
         #execute the command
         os.system(cmd)
 

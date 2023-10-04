@@ -18,14 +18,14 @@ module ei_tdp_ram_dut
         input [(ADDR_WIDTH-1):0] addr_a, addr_b,
         input we_a, we_b,
         input re_a, re_b,
-        output reg [(DATA_WIDTH-1):0] q_a, q_b
+        output logic [(DATA_WIDTH-1):0] q_a, q_b
     );
 
     //variable for loop control
     integer i;
 
     //memory declaration
-    reg [DATA_WIDTH-1:0] ram[2**ADDR_WIDTH-1:0];
+    bit [DATA_WIDTH-1:0] ram[2**ADDR_WIDTH-1:0];
 
     //Port A block of operation
     always @ (posedge clk or negedge resetn)
