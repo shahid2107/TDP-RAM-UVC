@@ -82,13 +82,11 @@ optional arguments:
   
   -e {compile,run,compile_and_run,waveform,regression}, --execute {compile,run,compile_and_run,waveform,regression}
                         
-                        Type of Execution : 1. compile 2. run 3.
-                        compile_and_run 4. waveforms 5. regression
+                        Type of Execution : 1. compile 2. run 3. compile_and_run 4. waveforms 5. regression
   
   -v {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}, --verbosity {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}
                         
-                        Verbosity Type : 1. NONE 2. LOW 3. MEDIUM 4. HIGH 5.                      
-                        FULL 6. DEBUG
+                        Verbosity Type : 1. NONE 2. LOW 3. MEDIUM 4. HIGH 5. FULL 6. DEBUG
   
   -fc, --funcov         To add functional coverage
   
@@ -100,8 +98,7 @@ optional arguments:
                         
                         To execute testcase mentioned from CLI input
   
-  -s, --status          To show status pf each testcases at the end of
-                        simulation
+  -s, --status          To show status pf each testcases at the end of simulation
   
   -db, --debug          To see executed command
   
@@ -111,8 +108,7 @@ optional arguments:
 
   -t TIMES, --times TIMES
                         
-                        To select how many times each testcases is to be
-                        executed
+                        To select how many times each testcases is to be executed
 
 
 
