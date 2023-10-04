@@ -1,6 +1,0 @@
-{"vcs1":{"timestamp_begin":1695470929.879909341, "rt":5.03, "ut":3.61, "st":0.22}}
-{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1695470929.129505935}
-{"VCS_COMP_START_TIME": 1695470929.129505935}
-{"VCS_COMP_END_TIME": 1695470934.994779392}
-{"VCS_USER_OPTIONS": "-full64 -debug_access+r -sverilog +acc +vpi +incdir+/home/hitesh.patel/UVM/UVM_1.2/src /home/hitesh.patel/UVM/UVM_1.2/src/uvm.sv /home/hitesh.patel/UVM/UVM_1.2/src/dpi/uvm_dpi.cc -CFLAGS -DVCS ../TOP/ei_tdp_ram_top.sv -f compile.f +define+UVM_REPORT_DISABLE_FILE_LINE"}
-{"vcs1": {"peak_mem": 356252}}
