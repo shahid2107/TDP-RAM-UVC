@@ -83,66 +83,130 @@ optional arguments:
 **Directory Structure**
 
 |-|TDP-RAM-UVC
+
 |--|-Development
+
 |---|--SIM
+
 |----|---csrc
+
 |-----|----diag
+
 |---|--ENV
+
 |---|--|--- ei_tdp_ram_env.sv
+
 |---|--RTL
+
 |---|--|--- ei_tdp_ram_dut.sv
+
 |---|--SRC
+
 |----|---agent
+
 |----|---|--- ei_tdp_ram_agent.sv
+
 |----|---|--- ei_tdp_ram_monitor.sv
+
 |----|---|--- ei_tdp_ram_sequencer.sv
+
 |----|---|--- ei_tdp_ram_driver.sv
+
 |----|---interface
+
 |----|---|--- ei_tdp_ram_interface.sv
+
 |----|---scoreboard
+
 |----|---|--- ei_tdp_ram_scoreboard.sv
+
 |----|---seq_item
+
 |----|---|--- ei_tdp_ram_seq_item.sv
+
 |----|---sequences
+
 |----|---|--- ei_tdp_ram_base_sequence.sv
+
 |----|---|--- ei_tdp_ram_sanity_sequence.sv
+
 |----|---|--- ei_tdp_ram_single_port_sanity_sequence.sv
+
 |----|---|--- ei_tdp_ram_dual_port_sanity_sequence.sv
+
 |----|---subscriber
+
 |----|---|--- ei_tdp_ram_subscriber.sv
+
 |----|---callback
+
 |----|---|--- ei_tdp_ram_driver_cb.sv
+
 |----|---assertions
+
 |----|---|--- ei_tdp_ram_assertion.sv
+
 |---|--TEST
+
 |---|--|--- ei_tdp_ram_base_test.sv
+
 |---|--|--- ei_tdp_ram_reset_inbetween_p1_5_wr_test.sv
+
 |---|--|--- ei_tdp_ram_p1_sanity_test.sv
+
 |---|--|--- ei_tdp_ram_p1_5_wr_p1_5_rd_test.sv
+
 |---|--|--- ei_tdp_ram_p1_p2_sanity_test.sv
+
 |---|--|--- ei_tdp_ram_p1_rd_with_rd_en_low_test.sv
+
 |---|--|--- ei_tdp_ram_p1_wr_whole_rd_test.sv
+
 |---|--|--- ei_tdp_ram_p1_wr_with_wr_en_low_test.sv
+
 |---|--|--- ei_tdp_ram_p2_sanity_test.sv
+
 |---|--|--- ei_tdp_ram_p2_wr_p1_rd_same_addr_test.sv
+
 |---|--|--- ei_tdp_ram_p2_b2b_wr_p2_rd_test.sv
+
 |---|--|--- ei_tdp_ram_p2_wr_p1_p2_rd_test.sv
+
 |---|--|--- ei_tdp_ram_p2_wr_whole_rd_test.sv
+
 |---|--|--- ei_tdp_ram_p2_wr_with_wr_en_low_test.sv
+
 |---|--|--- ei_tdp_ram_random_test.sv
+
 |---|--|--- ei_tdp_ram_reset_inbetween_p1_5_rd_test.sv
+
 |---|--|--- ei_tdp_ram_reset_inbetween_p2_5_rd_test.sv
+
 |---|--|--- ei_tdp_ram_reset_inbetween_p2_5_wr_test.sv
+
 |---|--|--- ei_tdp_ram_p1_b2b_wr_p1_rd_test.sv
+
 |---|--|--- ei_tdp_ram_p1_wr_p1_p2_rd_test.sv
+
 |---|--|--- ei_tdp_ram_p1_wr_p2_rd_same_addr_test.sv
+
 |---|--|--- ei_tdp_ram_p2_5_wr_p2_5_rd_test.sv
+
 |---|--|--- ei_tdp_ram_p2_rd_with_rd_en_low_test.sv
+
 |---|--|--- ei_tdp_ram_reset_test.sv
+
 |---|--TOP
+
 |---|--|--- ei_tdp_ram_package.sv
+
 |---|--|--- ei_tdp_ram_top.sv
+
 |--|-Documentation
+
 |---|--Coverage_Report
+
 |---|--Project_overall_individual_status_and_MoM
+
 |---|--Verification_Plan
+
