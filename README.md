@@ -50,7 +50,9 @@ Output Signals of DUT:
 
 **Python Commands To Execute UVC**
 
-usage: ei_tdp_ram_run.py [-h]
+usage: ei_tdp_ram_run.py 
+                         
+                         [-h]
                          
                          [-e {compile,run,compile_and_run,waveform,regression}]
                          
