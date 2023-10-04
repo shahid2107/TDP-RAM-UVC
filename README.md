@@ -72,7 +72,7 @@ optional arguments:
                         Type of Execution : 1. compile 2. run 3.
                         compile_and_run 4. waveforms 5. regression
   
-  -  v {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}, --verbosity {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}
+  - v {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}, --verbosity {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}
                         Verbosity Type : 1. NONE 2. LOW 3. MEDIUM 4. HIGH 5.                      
                         FULL 6. DEBUG
   
