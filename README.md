@@ -54,9 +54,21 @@ usage: ei_tdp_ram_run.py [-h]
                          
                          [-e {compile,run,compile_and_run,waveform,regression}]
                          
-                         [-v {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}] [-fc] [-cc]
+                         [-v {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}] 
                          
-                         [-l] [-n TESTNAME] [-s] [-db] [-ms MANUAL_SEED]
+                         [-fc] 
+                         
+                         [-cc]
+                         
+                         [-l] 
+                         
+                         [-n TESTNAME] 
+                         
+                         [-s] 
+                         
+                         [-db] 
+                         
+                         [-ms MANUAL_SEED]
                          
                          [-t TIMES]
 
@@ -72,7 +84,7 @@ optional arguments:
                         Type of Execution : 1. compile 2. run 3.
                         compile_and_run 4. waveforms 5. regression
   
-  - v {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}, --verbosity {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}
+  -v {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}, --verbosity {NONE,LOW,MEDIUM,HIGH,FULL,DEBUG}
                         Verbosity Type : 1. NONE 2. LOW 3. MEDIUM 4. HIGH 5.                      
                         FULL 6. DEBUG
   
@@ -96,6 +108,7 @@ optional arguments:
   -t TIMES, --times TIMES
                         To select how many times each testcases is to be
                         executed
+
 
 **Directory Structure**
 
